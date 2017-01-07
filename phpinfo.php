@@ -1,3 +1,5 @@
 <?php
-	echo phpinfo();
+echo 'Hello World!';
+echo 'I am OK';
+echo phpinfo();
 	
