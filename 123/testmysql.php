@@ -1,6 +1,6 @@
 <?php
 header("Content-Type:text/html;charset=utf-8");
-$con = mysql_connect("http://54.238.247.137/","root","wang5763");
+$con = mysql_connect("54.238.247.137","root","wang5763");
 if (!$con)
   {
   die('数据库连接失败: ' . mysql_error());
