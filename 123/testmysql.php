@@ -7,9 +7,9 @@ if (!$con)
   }
   else
   {
-  	// echo "connect success!";
+  	echo "connect success!";
   mysql_select_db("test", $con);
-  $result = mysql_query("SELECT * FROM class");
+  $result = mysql_query("SELECT * FROM tb_class");
   while($row = mysql_fetch_array($result))
   {
   echo $row['id'] . " " . $row['name'];
