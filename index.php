@@ -61,10 +61,9 @@ class wechatCallbackapiTest
                         <Content><![CDATA[%s]]></Content>
                         <FuncFlag>0</FuncFlag>
                         </xml>";
-
-
-				// 创建一个新cURL资源
-				$ch = curl_init();
+            if($keyword == "?" || $keyword == "？")
+            {
+            	$ch = curl_init();
 				// 设置URL和相应的选项
 				curl_setopt($ch, CURLOPT_URL, "http://api.qingyunke.com/api.php?key=free&appid=0&msg=".$keyword);
 				curl_setopt($ch, CURLOPT_HEADER, false);
@@ -76,7 +75,11 @@ class wechatCallbackapiTest
 				$msgType = "text";
 				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
-				echo $resultStr;
+                $msgType = "text";
+                $contentStr = date("Y-m-d H:i:s",time());
+                $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
+                echo $resultStr;
+            }
         }else{
             echo "";
             exit;
