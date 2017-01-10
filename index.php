@@ -74,7 +74,7 @@ class wechatCallbackapiTest
 				curl_close($ch);
 
 				$msgType = "text";
-				$contentStr = $jsonRec;
+				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
 				echo $resultStr;
 			}
