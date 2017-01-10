@@ -61,7 +61,7 @@ class wechatCallbackapiTest
                         <Content><![CDATA[%s]]></Content>
                         <FuncFlag>0</FuncFlag>
                         </xml>";
-            if($keyword == "?" || $keyword == "？")
+            if($keyword != "" )
             {
            		$res = file_get_contents("http://api.qingyunke.com/api.php?key=free&appid=0&msg=".$keyword);
 
@@ -69,7 +69,7 @@ class wechatCallbackapiTest
 				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 $msgType = "text";
-                $contentStr = date("Y-m-d H:i:s",time());
+                $contentStr = $res;
                 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 echo $resultStr;
             }
