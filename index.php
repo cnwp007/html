@@ -61,8 +61,8 @@ class wechatCallbackapiTest
                         <Content><![CDATA[%s]]></Content>
                         <FuncFlag>0</FuncFlag>
                         </xml>";
-			if($keyword != '')
-			{
+
+
 				// 创建一个新cURL资源
 				$ch = curl_init();
 				// 设置URL和相应的选项
@@ -77,7 +77,6 @@ class wechatCallbackapiTest
 				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
 				echo $resultStr;
-			}
         }else{
             echo "";
             exit;
