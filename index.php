@@ -68,10 +68,7 @@ class wechatCallbackapiTest
            		
                 $contentStr = $resObj->content;
 				$msgType = "text";
-				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
-                $msgType = "text";
-                $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 echo $resultStr;
             }
         }else{
