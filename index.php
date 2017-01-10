@@ -64,12 +64,13 @@ class wechatCallbackapiTest
             if($keyword != "" )
             {
            		$res = file_get_contents("http://api.qingyunke.com/api.php?key=free&appid=0&msg=".$keyword);
-
+           		$resObj = json_decode($res);
+           		
+                $contentStr = $resObj.content;
 				$msgType = "text";
 				$contentStr = time();
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 $msgType = "text";
-                $contentStr = $res;
                 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 echo $resultStr;
             }
