@@ -241,10 +241,10 @@ width:201px; height:45px; float:left; line-height:45px; color:#ffffff; font-size
 }
 </style>
 <script type="text/javascript" src="../js/transport.js"></script><script type="text/javascript">
-onload = function()
-{
-  <!--Ajax.call('index.php?is_ajax=1&act=license','', start_sendmail_Response, 'GET', 'JSON');-->
-}
+// onload = function()
+// {
+//   <!--Ajax.call('index.php?is_ajax=1&act=license','', start_sendmail_Response, 'GET', 'JSON');-->
+// }
 /**
  * 帮助系统调用
  */
@@ -349,16 +349,9 @@ frmBody1.rows="113,*";
 <div id="submenu-div">
 <ul>
 <li class="show_9"><a href="privilege.php?act=logout" target="_top">退出</a></li>
-<li class="show_8"><a href="http://www.68ecshop.com/ecshop_school.html" target="_blank">帮助</a></li>
-<li class="show_7"><a href="http://www.68ecshop.com/ecshop_topic/company/"  target="_blank">关于我们</a></li>
 <li class="show_6"><a href="privilege.php?act=modif" target="main_frame">个人设置</a></li>
-
-<li class="show_3" ><a href="index.php?act=first" target="main_frame">开店向导</a></li> 
-<li class="show_5"><a href="message.php?act=list" target="main_frame">管理留言</a></li>
-<li class="show_2"><a href="#"  onclick="ShowToDoList()">记事本</a></li>
-<li class="show_4"> <a href="index.php?act=clear_cache" class="qinghc" target="main_frame">清除缓存</a></li>
 <li class="show_1"><a href="../" target="_blank">查看网店</a></li>
-<li class="show_7" style="width:95px;"> <a href="http://www.68ecshop.com" class="qinghc" target="_blank" style="color:#FF0; font-weight:bold">更多商之翼产品</a></li></ul>
+</ul>
        <div id="load-div" style="padding: 5px 0px 0 0; text-align: right; color: #FF9900; display: none;width:20%;float:right; height:68px; line-height:58px;"> 正在处理您的请求...</div>
   </div>
 </div>

@@ -6,9 +6,9 @@
 <title>商之翼 管理中心</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="styles/general.css" rel="stylesheet" type="text/css" />
-<link href="styles/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script><script type="text/javascript" src="js/common.js"></script><script language="JavaScript">
+<link href="<?=base_url().'admin/css/general.css' ?>" rel="stylesheet" type="text/css" />
+<link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script><script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script><script language="JavaScript">
 <!--
 // 这里把JS用到的所有语言都赋值到这里
 var process_request = "正在处理您的请求...";
@@ -38,23 +38,23 @@ var good_price_not_number = "商品价格不是数值";
 
 <script type="Text/Javascript" language="JavaScript">
 <!--
-  Ajax.call('cloud.php?is_ajax=1&act=cloud_remind','', cloud_api, 'GET', 'JSON');
-    function cloud_api(result)
-    {
-      //alert(result.content);
-      if(result.content=='0')
-      {
-        document.getElementById("cloud_list").style.display ='none';
-      }
-      else
-       {
-         document.getElementById("cloud_list").innerHTML =result.content;
-      }
-    } 
-   function cloud_close(id)
-    {
-      Ajax.call('cloud.php?is_ajax=1&act=close_remind&remind_id='+id,'', cloud_api, 'GET', 'JSON');
-    }
+  // Ajax.call('cloud.php?is_ajax=1&act=cloud_remind','', cloud_api, 'GET', 'JSON');
+  //   function cloud_api(result)
+  //   {
+  //     //alert(result.content);
+  //     if(result.content=='0')
+  //     {
+  //       document.getElementById("cloud_list").style.display ='none';
+  //     }
+  //     else
+  //      {
+  //        document.getElementById("cloud_list").innerHTML =result.content;
+  //     }
+  //   } 
+  //  function cloud_close(id)
+  //   {
+  //     Ajax.call('cloud.php?is_ajax=1&act=close_remind&remind_id='+id,'', cloud_api, 'GET', 'JSON');
+  //   }
   //-->
  </script> 
 
@@ -229,14 +229,14 @@ var good_price_not_number = "商品价格不是数值";
 </table>
 </div>
 
-<script type="text/javascript" src="../js/utils.js"></script><script type="Text/Javascript" language="JavaScript">
+<script type="text/javascript" src="<?=base_url().'admin/js/utils.js' ?>"></script><script type="Text/Javascript" language="JavaScript">
 <!--
 onload = function()
 {
   /* 检查订单 */
   startCheckOrder();
 }
-  Ajax.call('index.php?is_ajax=1&act=main_api','', start_api, 'GET', 'TEXT','FLASE');
+  // Ajax.call('index.php?is_ajax=1&act=main_api','', start_api, 'GET', 'TEXT','FLASE');
   //Ajax.call('cloud.php?is_ajax=1&act=cloud_remind','', cloud_api, 'GET', 'JSON');
    function start_api(result)
     {
@@ -333,23 +333,23 @@ onload = function()
 </object>
 
 <script language="JavaScript">
-document.onmousemove=function(e)
-{
-  var obj = Utils.srcElement(e);
-  if (typeof(obj.onclick) == 'function' && obj.onclick.toString().indexOf('listTable.edit') != -1)
-  {
-    obj.title = '点击修改内容';
-    obj.style.cssText = 'background: #278296;';
-    obj.onmouseout = function(e)
-    {
-      this.style.cssText = '';
-    }
-  }
-  else if (typeof(obj.href) != 'undefined' && obj.href.indexOf('listTable.sort') != -1)
-  {
-    obj.title = '点击对列表排序';
-  }
-}
+// document.onmousemove=function(e)
+// {
+//   var obj = Utils.srcElement(e);
+//   if (typeof(obj.onclick) == 'function' && obj.onclick.toString().indexOf('listTable.edit') != -1)
+//   {
+//     obj.title = '点击修改内容';
+//     obj.style.cssText = 'background: #278296;';
+//     obj.onmouseout = function(e)
+//     {
+//       this.style.cssText = '';
+//     }
+//   }
+//   else if (typeof(obj.href) != 'undefined' && obj.href.indexOf('listTable.sort') != -1)
+//   {
+//     obj.title = '点击对列表排序';
+//   }
+// }
 <!--
 
 
