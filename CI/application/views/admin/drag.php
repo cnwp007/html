@@ -9,14 +9,14 @@
 body {
   margin: 0;
   padding: 0;
-  background:url("images/left_line.gif") repeat-y;
+  background:url("<?=base_url().'admin/images/left_line.gif' ?>") repeat-y;
   cursor: E-resize;
 }
 </style>
 <script type="text/javascript" language="JavaScript">
 <!--
 var pic = new Image();
-pic.src="images/arrow_right.gif";
+pic.src="<?=base_url().'admin/images/arrow_right.gif' ?>";
 
 function toggleMenu()
 {
@@ -26,7 +26,7 @@ function toggleMenu()
   {
 	parent.document.getElementById('menu-frame').scrolling = "no";
     frmBody.cols="195, 12, *";
-    imgArrow.src = "images/arrow_left.gif";
+    imgArrow.src = "<?=base_url().'admin/images/arrow_left.gif' ?>";
 	parent.menu_frame.document.getElementById('menu-ul').style.display="block";
 	parent.menu_frame.document.getElementById('menu-ul-suo').style.display="none";
 
@@ -35,7 +35,7 @@ function toggleMenu()
   {
 	parent.menu_frame.scrolling = "yes";
 	frmBody.cols="37, 12, *";
-    imgArrow.src = "images/arrow_right.gif";
+    imgArrow.src = "<?=base_url().'admin/images/arrow_right.gif' ?>";
 	parent.menu_frame.document.getElementById('menu-ul').style.display="none";
 	parent.menu_frame.document.getElementById('menu-ul-suo').style.display="block";
 
@@ -48,7 +48,7 @@ function toggleMenu()
 </head>
 <body onselect="return false;">
 <table height="100%" cellspacing="0" cellpadding="0" id="tbl">
-  <tr><td><a href="javascript:toggleMenu();"><img src="images/arrow_left.gif" width="12" height="58" id="img" border="0" /></a></td></tr>
+  <tr><td><a href="javascript:toggleMenu();"><img src="<?=base_url().'admin/images/arrow_left.gif' ?>" width="12" height="58" id="img" border="0" /></a></td></tr>
 </table>
 </body>
 </html>
