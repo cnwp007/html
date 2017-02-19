@@ -208,7 +208,7 @@ color: #2F9D78;">公告</span>
 
 
 
-
+<!-- 
 
 <div class="nav" style="height:  3.7rem;
 
@@ -324,7 +324,7 @@ margin-top: 0.575rem;">
 
       </ul>
 
-</div>
+</div> -->
 
 
 
@@ -336,7 +336,7 @@ margin-top: 0.575rem;">
 
   <div class="today_title"  style="height:0px">
 
-  <span><img src="<?=base_url().'home/images/h-left-girl.png' ?>"></span><span>000</span> 
+<!--   <span><img src="<?=base_url().'home/images/h-left-girl.png' ?>"></span><span>000</span> --> 
 
   </div>
 
