@@ -1,432 +1,613 @@
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html style="font-size: 40px;" lang="zh">
+
 <head>
-<meta name="Generator" content="ECSHOP v2.7.3" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>ecshop开发中心  </title>
-<meta name="Keywords" content="ecshop开发中心" />
-<meta name="Description" content="ecshop开发中心" />
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-<script type="text/javascript" src="<?=base_url().'home/js/TouchSlide.1.1.js' ?>"></script>
-<link rel="stylesheet" type="text/css" href="<?=base_url().'home/css/68ecshop.css' ?>"/>
-<link rel="stylesheet" href="<?=base_url().'home/css/font-awesome.min.css' ?>">
-<link href="<?=base_url().'home/css/style.css' ?>" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?=base_url().'home/js/jquery.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'home/js/jquery.json.js' ?>"></script><script type="text/javascript" src="<?=base_url().'home/js/transport.js' ?>"></script><script type="text/javascript" src="<?=base_url().'home/js/common.js' ?>"></script></head>
-<body>
-<div id="wrapper" >
-  <div class="page-index" id="home">
-    <header class='header'>
-    <a href="catalog.php" class="top_bt">首页</a>
-    <div class="tit" style="">
-      <h3>ECSHOP开发中心</h3>
-    </div>
-    <div class="nav">
-      <ul>
-        <li class="cart"> <a href="flow.php">购物车</a> <span id="ECS_CARTINFO" class="ECS_CARTINFO"> 0 </span> </li>
-      </ul>
-    </div>
-</header>
-   <style>
-	.scrollimg{position:relative; overflow:hidden; margin:0px auto; /* 设置焦点图最大宽度 */}
-	.scrollimg .hd{ position: absolute;
-bottom: 1em;
-text-align: center;
-width: 100%;}
-	.scrollimg .hd li{display: inline-block;
-width: .8em;
-height: .8em;
-margin: 0 .4em;
--webkit-border-radius: .8em;
--moz-border-radius: .8em;
--ms-border-radius: .8em;
--o-border-radius: .8em; 
-border-radius: .8em;
-background: #FFF;
-filter: alpha(Opacity=60);
-opacity: .6;
-box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
-	.scrollimg .hd li.on{ filter: alpha(Opacity=90);
-opacity: .9;
-background: #f8f8f8;
-box-shadow: 0 0 2px #ccc; }
-	.scrollimg .bd{position:relative; z-index:0;}
-	.scrollimg .bd li{position:relative; text-align:center;}
-	.scrollimg .bd li img{background:url(themesmobile/68ecshopcom_mobile/images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
-	.scrollimg .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0);}  /* 去掉链接触摸高亮 */
-	.scrollimg .bd li .tit{display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(themesmobile/68ecshopcom_mobile/images/focusBg.png) repeat-x; color:#fff;  text-align:left;}
-</style>
-<div id="scrollimg" class="scrollimg">
-				<div class="bd">
-					<ul>
-			          <li><a href="affiche.php?ad_id=3&uri="><img src="<?=base_url().'home/images/1395294388718461791.jpg' ?>" width="100%" /></a></li>
-                    <li><a href="affiche.php?ad_id=4&uri="><img src="<?=base_url().'home/images/1395294394438406359.jpg' ?>" width="100%" /></a></li>
-                    <li><a href="affiche.php?ad_id=5&uri="><img src="data/afficheimg/1395294400918255199.jpg" width="100%" /></a></li>
-          					</ul>
-				</div>
-				<div class="hd">
-					<ul></ul>
-				</div>
-			</div>
-			<script type="text/javascript">
-				TouchSlide({ 
-					slideCell:"#scrollimg",
-					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-					mainCell:".bd ul", 
-					effect:"leftLoop", 
-					autoPage:true,//自动分页
-					autoPlay:true //自动播放
-				});
-			</script>
- 
-    <div id="fake-search" >
-      <div class="fakeInput">
-       <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="searchform">      
-          <input  name="keywords" id="keyword" class="search_text" value="请输入搜索的商品" onFocus="if(this.value=='请输入搜索的商品'){this.value=''}" onBlur="if(this.value==''){this.value='请输入搜索的商品'}" type="text"/>
-          <input type="submit"  class="search_submit" value=""/>
-		</form>
-        </div>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+
+<title>我的水果</title>
+
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+
+<meta name="format-detection" content="telephone=no">
+
+<link href="<?=base_url().'home/css/index.css' ?>" rel=" stylesheet">
+
+<link href="<?=base_url().'home/css/islider.css' ?>" rel=" stylesheet">
+
+<script src="<?=base_url().'home/js/jquery.js' ?>"></script>
+
+</head>
+
+<body class="">
+
+<div id="body">
+
+<div class="touchweb_header" style="height: 2.2rem;
+
+background-color: #43CB9D;
+
+color: #fff;">
+
+  <div class="hd_left hd_logo"> <img src="<?=base_url().'home/images/app161122094813.jpg' ?>"   style="margin: 0.0rem 0rem 0rem 0.325rem;"></div>
+
+  <div class="hd_title hd_search"  style="background-color: #2F9D78;"> <span><i class="icon iconfont"><img src="<?=base_url().'home/images/soc.jpg' ?>"  style="width:80%; margin-top:7%;"></i></span>
+
+    <input placeholder="查找您喜欢的水果.." id="ckSearch" type="text"  style="padding: 0; height: 1.4rem;
+
+width: 10.5rem;
+
+float: left;
+
+border-radius: 0rem 0.2rem 0.2rem 0rem;
+
+font-size: 0.6rem;
+
+background-color: #2F9D78;
+
+color: #fff;">
+
+  </div>
+
 </div>
-     <div class="nav-index card">
-      <ul>
-              <li>
-        <a href="catalog.php"><span class="icon" style="background:url(images/201505/1431744519889007772.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>全部商品</span></span></a>
-        </li>	
-                  <li>
-        <a href="group_buy.php"><span class="icon" style="background:url(images/201503/1426736491563019383.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>团购</span></span></a>
-        </li>	
-                  <li>
-        <a href="brand.php"><span class="icon" style="background:url(images/201503/1426736580583813598.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>品牌</span></span></a>
-        </li>	
-                  <li>
-        <a href="article_cat_list.php"><span class="icon" style="background:url(images/201503/1426736612738140157.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>文章分类</span></span></a>
-        </li>	
-          </ul><ul>        <li>
-        <a href="flow.php"><span class="icon" style="background:url(images/201503/1426736641431265014.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>购物车</span></span></a>
-        </li>	
-                  <li>
-        <a href="share.php"><span class="icon" style="background:url(images/201503/1426736669176561709.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>分享</span></span></a>
-        </li>	
-                  <li>
-        <a href="user.php"><span class="icon" style="background:url(images/201503/1426736691023298586.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>用户中心</span></span></a>
-        </li>	
-                  <li>
-        <a href="exchange.php"><span class="icon" style="background:url(images/201503/1426736710634933382.png);background-size: 4em 4em;">&nbsp;</span><span class="t"><span>积分兑换</span></span></a>
-        </li>	
-          </ul><ul></div> 
+
+<div class="touchweb_content">
+
+<div class="benner">
+
+<div class="scroll-box">
+
+  <div id="sw1446624384114" class="swiper-container container-point swiper-container-horizontal">
+
+    <div style="transition-duration: 0ms; transform: translate3d(-2560px, 0px, 0px);" class="swiper-wrapper">
+
+     
+
+   
+
+        
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  class="pp_init_img" src="<?=base_url().'home/images/app161122092802.jpg' ?>" style="width:100%; "> </a> </div>
+
     
-    
-    
-    <div class="card show_big">
-      <div class="col2">
-        <div class="row2 mg-bor-right"><span>
-</span></div>
-        <div class="rows">
-          <div class="row1"><span>
-</span></div>
-          <div class="row1 mg-bor-no-left mg-bor-top"><span>
-</span></div>
-        </div>
-      </div>
+
+  
+
       
-      <div>
-        <div class="col2">
-          <div class="row1 mg-bor-right"><span>
-</span></div>
-          <div class="row1 mg-bor-right"><span>
-</span></div>
-</div>
-</div>
-</div>
-<div class="list">
-      <div class="head"><span>热销商品</span></div>
-      <div class="blank6"></div>
-     <p> <ul>  
-                     <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=14"><img src="../images/201405/thumb_img/14_thumb_G_1399963309409.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=14">ECSHOP模板中心...</a><p class="price">本店价：￥2625</p><del class="old_price">原　价：￥3150</del>
-                       <a href="javascript:addToCart(14)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=13"><img src="../images/201405/thumb_img/13_thumb_G_1399963013189.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=13">ECSHOP模板中心...</a><p class="price">本店价：￥1311</p><del class="old_price">原　价：￥1573</del>
-                       <a href="javascript:addToCart(13)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=1"><img src="../images/201405/thumb_img/1_thumb_G_1399962983973.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=1">ECSHOP模板中心...</a><p class="price">本店价：￥1388</p><del class="old_price">原　价：￥1666</del>
-                       <a href="javascript:addToCart(1)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=23"><img src="../images/201405/thumb_img/23_thumb_G_1399962927636.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=23">ECSHOP模板中心...</a><p class="price">本店价：￥3700</p><del class="old_price">原　价：￥4440</del>
-                       <a href="javascript:addToCart(23)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                  </ul></p>
-</div>
- 
-<div class="list">
-      <div class="head"><span>新品上市</span></div>
-      <div class="blank6"></div>
-      <ul>  
-                    <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=5"><img src="../images/201405/thumb_img/5_thumb_G_1399963282906.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=5">ECSHOP模板中心...</a><p class="price">本店价：￥20</p><del class="old_price">原　价：￥24</del>
-                    <a href="javascript:addToCart(5)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=33"><img src="../images/201405/thumb_img/33_thumb_G_1399963191124.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=33">ECSHOP模板中心...</a><p class="price">本店价：￥0</p><del class="old_price">原　价：￥0</del>
-                    <a href="javascript:addToCart(33)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=3"><img src="../images/201405/thumb_img/3_thumb_G_1399963174586.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=3">ECSHOP模板中心...</a><p class="price">本店价：￥68</p><del class="old_price">原　价：￥82</del>
-                    <a href="javascript:addToCart(3)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=7"><img src="../images/201405/thumb_img/7_thumb_G_1399963118634.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=7">ECSHOP模板中心...</a><p class="price">本店价：￥100</p><del class="old_price">原　价：￥120</del>
-                    <a href="javascript:addToCart(7)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=22"><img src="../images/201405/thumb_img/22_thumb_G_1399963097437.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=22">ECSHOP模板中心...</a><p class="price">本店价：￥5999</p><del class="old_price">原　价：￥7199</del>
-                    <a href="javascript:addToCart(22)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=12"><img src="../images/201405/thumb_img/12_thumb_G_1399962907989.jpg" width="80"></a>
-                   <a class="fn"href="goods.php?id=12">ECSHOP模板中心...</a><p class="price">本店价：￥960          </p><del class="old_price">原　价：￥1180</del>
-                    <a href="javascript:addToCart(12)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                  </ul>
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  class="pp_init_img" src="<?=base_url().'home/images/app161122092832.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  class="pp_init_img" src="<?=base_url().'home/images/app161122092854.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  class="pp_init_img" src="<?=base_url().'home/images/app161122092920.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+    
+
+    
+
     </div>
- <div class="list">
-      <div class="head"><span>促销商品</span></div>
-      <div class="blank6"></div>
-       <ul>  
-                     <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=12"><img src="../images/201405/thumb_img/12_thumb_G_1399962907989.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=12">ECSHOP模板中心...</a><p class="price">本店价：￥960          </p><del class="old_price">原　价：￥1180</del>
-                    <a href="javascript:addToCart(12)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=10"><img src="../images/201405/thumb_img/10_thumb_G_1399963234065.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=10">ECSHOP模板中心...</a><p class="price">本店价：￥1250          </p><del class="old_price">原　价：￥1594</del>
-                    <a href="javascript:addToCart(10)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=8"><img src="../images/201405/thumb_img/8_thumb_G_1399951905746.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=8">ECSHOP模板中心...</a><p class="price">本店价：￥385          </p><del class="old_price">原　价：￥479</del>
-                    <a href="javascript:addToCart(8)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=24"><img src="../images/201405/thumb_img/24_thumb_G_1399962854067.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=24">ECSHOP模板中心...</a><p class="price">本店价：￥1850          </p><del class="old_price">原　价：￥2400</del>
-                    <a href="javascript:addToCart(24)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                        <li class="hproduct">
-                <div class="url">
-                    <a class="photo" href="goods.php?id=32"><img src="../images/201405/thumb_img/32_thumb_G_1399962881763.jpg" width="80"></a>
-                    <a class="fn"href="goods.php?id=32">ECSHOP模板中心...</a><p class="price">本店价：￥2750          </p><del class="old_price">原　价：￥3612</del>
-                    <a href="javascript:addToCart(32)" class="btn">立即购买</a>
-                  </div>             
-                </li>          
-                  	</ul>
-</div>
- 
-<div class="list">
-  <div class="head"><span>卧房</span></div>
-  <div class="blank6"></div>
-  <div class="list-cell"> 
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=32" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/32_thumb_G_1399962881763.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> ￥2750</b></span><small class="ect-margin-lr" style="display:none"><del>￥3612</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>236人浏览</span></dd>
-      </dl>
+
+    <div id="pa1446624384114" class="swiper-pagination pagination-point">
+
+      
+
+    
+
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
         </div>
-        </a> </div></div>
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=31" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/31_thumb_G_1399963036056.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> 
-            ￥1337</b></span><small class="ect-margin-lr" style="display:none"><del>￥1604</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>19人浏览</span></dd>
-      </dl>
-        </div>
-        </a> </div></div>
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=24" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/24_thumb_G_1399962854067.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> ￥1850</b></span><small class="ect-margin-lr" style="display:none"><del>￥2400</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>177人浏览</span></dd>
-      </dl>
-        </div>
-        </a> </div></div>
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=23" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/23_thumb_G_1399962927636.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> 
-            ￥3700</b></span><small class="ect-margin-lr" style="display:none"><del>￥4440</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>56人浏览</span></dd>
-      </dl>
-        </div>
-        </a> </div></div>
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=22" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/22_thumb_G_1399963097437.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> 
-            ￥5999</b></span><small class="ect-margin-lr" style="display:none"><del>￥7199</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>37人浏览</span></dd>
-      </dl>
-        </div>
-        </a> </div></div>
-     
-      <div class="cell"> <div class="product items "> <a href="goods.php?id=21" class="ScanProductViewBtn" >
-        <div class="imgurl"><img src="../images/201405/thumb_img/21_thumb_G_1399963079916.jpg"></div>
-        <div class="info">
-          <dl>
-            <dt>
-              <span>ECSHOP模板中心68ecshop.com测试商品</span>
-            </dt>
-            <dd><span class="pull-left"><span>价格:<b class="ect-colory"> 
-            ￥2000</b></span><small class="ect-margin-lr" style="display:none"><del>￥2400</del></small></span><span class="ect-pro-price"></span></dd>
-            <dd><span class="pull-left"><i class="fa fa-eye"></i>10人浏览</span></dd>
-      </dl>
-        </div>
-        </a> </div></div>
-     </div>
-</div>
-<div class="col1 more"><a href="category.php?id=1"><span>查看更多卧房&nbsp;&gt;</span></a></div>
+
   </div>
+
+  <script src="<?=base_url().'home/js/swiper.js' ?>"></script>
+
+  <script>
+
+                var scrollstyle = $("#banner_1446624384114").find(".swiper-container");
+
+                $(scrollstyle).addClass("container-point");
+
+                $(scrollstyle).find(".swiper-wrapper").after("<div id='pa1446624384114' class='swiper-pagination pagination-point'></div>");
+
+                swiper_point_1446624384114();
+
+                function swiper_point_1446624384114() {
+
+                    var mySwiper = new Swiper('#sw1446624384114', {
+
+                        pagination: '#pa1446624384114',
+
+                        loop: true,//循环播放
+
+                        autoplay: 2000,//自动播放速度
+
+                        lazyLoading: true,//延时加载
+
+                    });
+
+                }
+
+            </script>
+
 </div>
-<div class="footer"  style="padding-bottom:2em;">
-      <div class="links"  id="ECS_MEMBERZONE"> <script type="text/javascript" src="<?=base_url().'home/js/utils.js' ?>"></script>          <a href="user.php"><span>登录</span></a><a href="javascript:window.scrollTo(0,0);"><span>返回顶部</span></a>
+
+
+
+
+
+
+
+
+
+<div class="notice"> <span class="tips_notice"  style="border: 0.05rem solid #2F9D78;
+
+color: #2F9D78;">公告</span>
+
+
+
+
+
+
+
+  <div id="aNtice" onClick="goty('/newsshow?id=1');">
+
+    <ul style="cursor: pointer;" class="islider-outer">
+
+      <li class=" islider-prev"></li>
+
+      <li class="islider-html islider-active">
+
+        <label for="CK6902">双溪西路门店开业8折起</label>
+
+      </li>
+
+      <li class=" islider-next"></li>
+
+    </ul>
+
+  </div>
+
 </div>
-      <div class="links" >
-      <a href="javascript:;"><span class="gl">触屏版</span></a>
-      <a href="http://pcib.sj.91.com/soft/Controller.ashx?action=readfile&f_id=41520455&platform=android&position=1000011&positionIndex=1&project=2200&qrcode=1"><span>安卓端</span></a>
-      <a href="https://itunes.apple.com/cn/app/ecshop-kai-fa-zhong-xin/id805998027?l=zh&ls=1&mt=8"><span>苹果端</span></a>
+
+
+
+
+
+
+
+<div class="nav" style="height:  3.7rem;
+
+line-height: 0.9rem;
+
+background-color: #fff;">
+
+  <ul>
+
+   
+
+   
+
+      
+
+    <li style="float: left;
+
+width: 20%;
+
+text-align: center;
+
+margin-top: 0.575rem;">
+
+      <dl>
+
+        <dt><a href="activities?id=1" class="stats" data-position="P_nav_0" data-category="C_home0"><img src="<?=base_url().'home/images/app161122101654.jpg' ?>" ></a></dt>
+
+        <dd><font color=#2F9D78>时令水果</font></dd>
+
+      </dl>
+
+    </li>
+
+      
+
+    <li style="float: left;
+
+width: 20%;
+
+text-align: center;
+
+margin-top: 0.575rem;">
+
+      <dl>
+
+        <dt><a href="activities?id=1" class="stats" data-position="P_nav_1" data-category="C_home1"><img src="<?=base_url().'home/images/app161122101715.jpg' ?>" ></a></dt>
+
+        <dd>礼品套餐</dd>
+
+      </dl>
+
+    </li>
+
+      
+
+    <li style="float: left;
+
+width: 20%;
+
+text-align: center;
+
+margin-top: 0.575rem;">
+
+      <dl>
+
+        <dt><a href="activities?id=1" class="stats" data-position="P_nav_2" data-category="C_home2"><img src="<?=base_url().'home/images/app161122101730.jpg' ?>" ></a></dt>
+
+        <dd>养生水果</dd>
+
+      </dl>
+
+    </li>
+
+      
+
+    <li style="float: left;
+
+width: 20%;
+
+text-align: center;
+
+margin-top: 0.575rem;">
+
+      <dl>
+
+        <dt><a href="activities?id=1" class="stats" data-position="P_nav_3" data-category="C_home3"><img src="<?=base_url().'home/images/app161122101752.jpg' ?>" ></a></dt>
+
+        <dd>优惠促销</dd>
+
+      </dl>
+
+    </li>
+
+      
+
+    <li style="float: left;
+
+width: 20%;
+
+text-align: center;
+
+margin-top: 0.575rem;">
+
+      <dl>
+
+        <dt><a href="activities?id=1" class="stats" data-position="P_nav_4" data-category="C_home4"><img src="<?=base_url().'home/images/app161122101809.png' ?>" ></a></dt>
+
+        <dd>5元专场</dd>
+
+      </dl>
+
+    </li>
+
+      </ul>
+
+</div>
+
+
+
+
+
+
+
+<div class="today_activity">
+
+  <div class="today_title"  style="height:0px">
+
+  <span><img src="<?=base_url().'home/images/h-left-girl.png' ?>"></span><span>000</span> 
+
+  </div>
+
+  <div class="today_list">
+
+         <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list0" data-category="C_today_list0"><img src="<?=base_url().'home/images/app161122103007.jpg' ?>" ></a></div>
+
+        <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list1" data-category="C_today_list1"><img src="<?=base_url().'home/images/app161122103950.jpg' ?>" ></a></div>
+
+        <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list2" data-category="C_today_list2"><img src="<?=base_url().'home/images/app161122104848.jpg' ?>" ></a></div>
+
+        <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list3" data-category="C_today_list3"><img src="<?=base_url().'home/images/app161122104404.jpg' ?>" ></a></div>
+
+        <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list4" data-category="C_today_list4"><img src="<?=base_url().'home/images/app161122105205.jpg' ?>" ></a></div>
+
       </div>
+
 </div>
-<section>
-  <div id="jisou-info" class="jisou-info" style="display: none;"></div>
-  <div class="info-nr">
-    <div id="info-nr-phone" class="info-nr-phone color-orange">
-      <input id="info-nr-btn" type="checkbox" name="" value="" class="info-nr-menu">
-      <div class=""> <a href="tel:4000785268" class="icon-phone"></a> </div>
-      <div class=""> <a href="index.php" class="icon-location"></a> </div>
-      <div class=""> <a href="user.php?act=message_list" class="icon-message"></a> </div>
-      <div class=""> <a href="share.php" class="icon-share"></a> </div>
+
+
+
+
+
+
+
+<div class="TP_title">
+
+  <h2> <span>促销专场</span> </h2>
+
+</div>
+
+<div class="pd_list">
+
+  <ul>
+
+       
+
+    <li> <a id="" href="activities?id=1" class="stats" data-position="P_HotProductList0" data-category="C_HotProductList0">
+
+      <div class="img_info"> <img src="<?=base_url().'home/images/app161122110435.jpg' ?>" alt="" >
+
+        <div class="SurplusTime"> <span><img src="<?=base_url().'home/images/h-time.png' ?>"></span> <span>剩余0天</span> </div>
+
+      </div>
+
+      <div class="text_info"> <span>智利加力果只要1元 特惠进行中</span> <span>￥1.00起</span> </div>
+
+      </a> </li>
+
+       
+
+    <li> <a id="" href="activities?id=1" class="stats" data-position="P_HotProductList0" data-category="C_HotProductList0">
+
+      <div class="img_info"> <img src="<?=base_url().'home/images/app161122110459.jpg' ?>" alt="" >
+
+        <div class="SurplusTime"> <span><img src="<?=base_url().'home/images/h-time.png' ?>"></span> <span>剩余0天</span> </div>
+
+      </div>
+
+      <div class="text_info"> <span>美容养颜的冬枣岂能错过</span> <span>￥6.00起</span> </div>
+
+      </a> </li>
+
+       
+
+    <li> <a id="" href="activities?id=1" class="stats" data-position="P_HotProductList0" data-category="C_HotProductList0">
+
+      <div class="img_info"> <img src="<?=base_url().'home/images/app161122110542.jpg' ?>" alt="" >
+
+        <div class="SurplusTime"> <span><img src="<?=base_url().'home/images/h-time.png' ?>"></span> <span>剩余0天</span> </div>
+
+      </div>
+
+      <div class="text_info"> <span>你只造吗 石榴可以提高人的免疫力</span> <span>￥68.00起</span> </div>
+
+      </a> </li>
+
+       
+
+    <li> <a id="" href="activities?id=1" class="stats" data-position="P_HotProductList0" data-category="C_HotProductList0">
+
+      <div class="img_info"> <img src="<?=base_url().'home/images/app161122110602.jpg' ?>" alt="" >
+
+        <div class="SurplusTime"> <span><img src="<?=base_url().'home/images/h-time.png' ?>"></span> <span>剩余0天</span> </div>
+
+      </div>
+
+      <div class="text_info"> <span>十一月奇异果回馈客户</span> <span>￥55.00起</span> </div>
+
+      </a> </li>
+
+       
+
+    <li> <a id="" href="activities?id=1" class="stats" data-position="P_HotProductList0" data-category="C_HotProductList0">
+
+      <div class="img_info"> <img src="<?=base_url().'home/images/app161122110619.jpg' ?>" alt="" >
+
+        <div class="SurplusTime"> <span><img src="<?=base_url().'home/images/h-time.png' ?>"></span> <span>剩余0天</span> </div>
+
+      </div>
+
+      <div class="text_info"> <span>最后一波脐橙低价来袭 你还等什么</span> <span>￥105.00起</span> </div>
+
+      </a> </li>
+
+      </ul>
+
+  <div style="width:100%; margin-top:7px; height:87px;"></div>
+
+</div>
+
+<div class="search_page">
+
+  <div class="touchweb_header"  style="background-color: #43CB9D;"><a class="hd_left hd_back search_width" id="search_back"><i class="iconfont"> <img src="<?=base_url().'home/images/back.jpg' ?>" style="margin-top:21%; width:80%; margin-right:15%" class="fan"> </i></a>
+
+    <div class="hd_title hd_search" style="background-color: #2F9D78;" ><span><i class="icon iconfont" ><img src="<?=base_url().'home/images/soc.jpg' ?>"  style="width:80%; margin-top:7%; height:76%; "></i></span>
+
+      <input placeholder="查找您喜欢的水果.." id="search_text" type="text" name="key" style="
+
+background-color: #2F9D78;">
+
     </div>
+
+    <div class="hd_right" id="search_product"><a class="hd_btn">搜索</a></div>
+
   </div>
-</section>
-<a href="#top" class="u-backtop" id="goTop"><span class="u-icon i-backtop"></span></a>
-<script>
-        window.addEventListener("DOMContentLoaded", function () {
-            btn = document.getElementById("info-nr-btn");
-            btn.onclick = function () {
-                var divs = document.getElementById("info-nr-phone").querySelectorAll("div");
-                var className = className = this.checked ? "on" : "";
-                for (i = 0; i < divs.length; i++) {
-                    divs[i].className = className;
-                }
-                document.getElementById("jisou-info").style.display = "on" == className ? "block" : "none";
-            }
-        }, false);
-    </script>
-<script>
-$(function () {
-            new Swipe(document.getElementById('jisou-banner'), {
-                speed: 500,
-                auto: 3000,
-                callback: function () {
-                    var lis = $(this.element).next("ol").children();
-                    lis.removeClass("on").eq(this.index).addClass("on");
-                }
-            });
-        });
-</script>
-<script>
-function mall_search(){
-	$(window).scroll(function() {
-		h = $(window).height();
-		t = $(document).scrollTop();
-		t > h ? $("#goTop").fadeIn() : $("#goTop").fadeOut();
-	});	
+
+  <div class="search_list">
+
+    <ul>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<div class="nav_menu">
+
+  <ul>
+
+    <li class="menu1"><a href="/">
+
+      <dl>
+
+        <dt></dt>
+
+        <dd>首页</dd>
+
+      </dl>
+
+      </a></li>
+
+    <li class=""><a href="/prclass">
+
+      <dl>
+
+        <dt></dt>
+
+        <dd>分类</dd>
+
+      </dl>
+
+      </a></li>
+
+    <li class=""><a href="/cart">
+
+      <dl>
+
+        <dt></dt>
+
+        <dd>购物车</dd>
+
+      </dl>
+
+      </a></li>
+
+    <li class=""><a href="/hyzx">
+
+      <dl>
+
+        <dt></dt>
+
+        <dd>账户</dd>
+
+      </dl>
+
+      </a></li>
+
+  </ul>
+
+</div>
+
+<div style="display: none;" class="return_top"><i class="icon iconfont"></i></div>
+
+<script type="text/javascript"> 
+
+ (function (doc, win) {
+
+        var docEl = doc.documentElement,
+
+                  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+
+                  recalc = function () {
+
+                      var clientWidth = docEl.clientWidth;
+
+                      if (!clientWidth) return;
+
+                      if (clientWidth > 640) clientWidth = 640;
+
+                      docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+
+                  };
+
+
+
+        if (!doc.addEventListener) return;
+
+        win.addEventListener(resizeEvt, recalc, false);
+
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+
+    })(document, window);
+
+$(function(){ 
+
+$("#ckSearch").click(function(){ 
+
+ $(".search_page").show();
+
+}); 
+
+$(".fan").click(function(){ 
+
+ $(".search_page").hide();
+
+}); 
+
+
+
+$("#search_product").click(function(){ 
+
+
+
+
+
+
+
+window.location.href="prlist?key="+document.getElementById("search_text").value ; 
+
+}); 
+
+
+
+
+
+}); 
+
+
+
+function goty(c){
+
+window.location.href=c; 
+
 }
-mall_search();
-</script> 
-<script type="text/javascript">
-window.onload = function()
-{
-  //Compare.init();
-  //fixpng();
-}
-var button_compare = '';
-var exist = "您已经选择了%s";
-var count_limit = "最多只能选择4个商品进行对比";
-var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
-var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
-var btn_buy = "购买";
-var is_cancel = "取消";
-var select_spe = "请选择商品属性";
+
 </script>
+
+<link rel="stylesheet" type="text/css" href="<?=base_url().'home/css/swiper.css' ?>">
+
 </body>
+
 </html>
