@@ -188,7 +188,7 @@ parent.drag_frame.document.getElementById('img');
   <A  href="javascript:void(0);" ><em  id="h1_02_cat_and_goods"></em>商品管理<SPAN id="fa_02_cat_and_goods"></SPAN></A></li>
   <li  class="dropdown" id="02_cat_and_goods">
          <ul>
-          <li><a href="goods.php?act=list" target="main_frame">商品列表</a></li>
+          <li><a href="<?=site_url('admin/goodsList') ?>" target="main_frame">商品列表</a></li>
           <li><a href="goods.php?act=add" target="main_frame">添加新商品</a></li>
           <li><a href="category.php?act=list" target="main_frame">商品分类</a></li>
           <li><a href="comment_manage.php?act=list" target="main_frame">用户评论</a></li>
@@ -347,32 +347,6 @@ parent.drag_frame.document.getElementById('img');
           <li><a href="http://www.68ecshop.com/article_cat-26.html" target="_blank">ECShop视频教程</a></li>
           <li><a href="http://www.68ecshop.com/article_cat-31.html" target="_blank">ECShop安装使用</a></li>
           <li><a href="http://bbs.68ecshop.com/forum.php" target="_blank">ECShop交流论坛</a></li>
-        </ul>
-      </li>
-  <li class=button  key="15_sms" name="menu">
-  <A  href="javascript:void(0);" ><em  id="h1_15_sms"></em>短信管理<SPAN id="fa_15_sms"></SPAN></A></li>
-  <li  class="dropdown" id="15_sms">
-         <ul>
-          <li><a href="sms.php?act=display_send_ui" target="main_frame">发送短信</a></li>
-          <li><a href="sms.php?act=sms_sign" target="main_frame">短信签名</a></li>
-        </ul>
-      </li>
-  <li class=button  key="16_rec" name="menu">
-  <A  href="javascript:void(0);" ><em  id="h1_16_rec"></em>推荐管理<SPAN id="fa_16_rec"></SPAN></A></li>
-  <li  class="dropdown" id="16_rec">
-         <ul>
-          <li><a href="affiliate.php?act=list" target="main_frame">推荐设置</a></li>
-          <li><a href="affiliate_ck.php?act=list" target="main_frame">分成管理</a></li>
-        </ul>
-      </li>
-  <li class=button  key="17_email_manage" name="menu">
-  <A  href="javascript:void(0);" ><em  id="h1_17_email_manage"></em>邮件群发管理<SPAN id="fa_17_email_manage"></SPAN></A></li>
-  <li  class="dropdown" id="17_email_manage">
-         <ul>
-          <li><a href="attention_list.php?act=list" target="main_frame">关注管理</a></li>
-          <li><a href="email_list.php?act=list" target="main_frame">邮件订阅管理</a></li>
-          <li><a href="magazine_list.php?act=list" target="main_frame">杂志管理</a></li>
-          <li><a href="view_sendlist.php?act=list" target="main_frame">邮件队列管理</a></li>
         </ul>
       </li>
 </ul>
