@@ -10,7 +10,8 @@
 <link href="<?=base_url().'admin/css/general.css' ?>" rel="stylesheet" type="text/css" />
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script><script language="JavaScript">
+<script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
+<script language="JavaScript">
 <!--
 // 这里把JS用到的所有语言都赋值到这里
 var process_request = "正在处理您的请求...";
@@ -84,20 +85,20 @@ var cancel_color = "无样式";
 
 
 <script language="JavaScript">
-    // function searchGoods()
-    // {
+    function searchGoods()
+    {
 
-    //             listTable.filter['cat_id'] = document.forms['searchForm'].elements['cat_id'].value;
-    //     listTable.filter['brand_id'] = document.forms['searchForm'].elements['brand_id'].value;
-    //     listTable.filter['intro_type'] = document.forms['searchForm'].elements['intro_type'].value;
-    //                 listTable.filter['suppliers_id'] = document.forms['searchForm'].elements['suppliers_id'].value;
-    //               listTable.filter['is_on_sale'] = document.forms['searchForm'].elements['is_on_sale'].value;
+                listTable.filter['cat_id'] = document.forms['searchForm'].elements['cat_id'].value;
+        listTable.filter['brand_id'] = document.forms['searchForm'].elements['brand_id'].value;
+        listTable.filter['intro_type'] = document.forms['searchForm'].elements['intro_type'].value;
+                    listTable.filter['suppliers_id'] = document.forms['searchForm'].elements['suppliers_id'].value;
+                  listTable.filter['is_on_sale'] = document.forms['searchForm'].elements['is_on_sale'].value;
         
-    //     listTable.filter['keyword'] = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
-    //     listTable.filter['page'] = 1;
+        listTable.filter['keyword'] = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
+        listTable.filter['page'] = 1;
 
-    //     listTable.loadList();
-    // }
+        listTable.loadList();
+    }
 </script>
 <!-- 商品列表 -->
 <form method="post" action="" name="listForm" onsubmit="return confirmSubmit(this)">
