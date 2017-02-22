@@ -17,4 +17,6 @@ if (!$con)
   }
   }
 mysql_close($con);
+
+Echo "ok";
 ?>
