@@ -340,7 +340,7 @@ parent.drag_frame.document.getElementById('img');
         </ul>
       </li>
   <li class=button  key="14_school" name="menu">
-  <A  href="javascript:void(0);" style="color:#FA841E"><em  id="h1_14_school"></em>商之翼学院<SPAN id="fa_14_school"></SPAN></A></li>
+  <A  href="javascript:void(0);" style="color:#FA841E"><em  id="h1_14_school"></em> 学院<SPAN id="fa_14_school"></SPAN></A></li>
   <li  class="dropdown" id="14_school">
          <ul>
           <li><a href="http://www.68ecshop.com/study/index.htm" target="_blank">ECShop在线手册</a></li>

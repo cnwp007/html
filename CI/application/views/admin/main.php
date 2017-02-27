@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>商之翼 管理中心</title>
+<title>  管理中心</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="<?=base_url().'admin/css/general.css' ?>" rel="stylesheet" type="text/css" />
@@ -31,7 +31,7 @@ var good_price_not_number = "商品价格不是数值";
 <body>
 
 <h1>
-<span class="action-span1"><a href="index.php?act=main">商之翼 管理中心</a> </span><span id="search_id" class="action-span1"></span>
+<span class="action-span1"><a href="index.php?act=main">  管理中心</a> </span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
 <!-- directory install start -->
@@ -216,7 +216,7 @@ var good_price_not_number = "商品价格不是数值";
   </tr>
   <tr>
     <td>前、后台模板美化</td>
-    <td>秦皇岛商之翼网络科技有限公司</td>
+    <td>秦皇岛 网络科技有限公司</td>
     <td>安装日期:</td>
     <td>2013-09-25</td>
   </tr>
@@ -301,7 +301,7 @@ onload = function()
 
 <div id="footer">
 共执行 29 个查询，用时 0.056003 秒，Gzip 已禁用，内存占用 3.503 MB<br />
-&copy; 2005-2015 ECSHOP 版权所有，并保留所有权利。<br />技术支持：秦皇岛商之翼网络科技有限公司
+&copy; 2005-2015 ECSHOP 版权所有，并保留所有权利。<br />技术支持：秦皇岛 网络科技有限公司
 </div>
 <!-- 新订单提示信息 -->
 <div id="popMsg">

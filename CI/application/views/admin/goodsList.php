@@ -12,44 +12,6 @@
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
 <script language="JavaScript">
-<!--
-// 这里把JS用到的所有语言都赋值到这里
-var process_request = "正在处理您的请求...";
-var todolist_caption = "记事本";
-var todolist_autosave = "自动保存";
-var todolist_save = "保存";
-var todolist_clear = "清除";
-var todolist_confirm_save = "是否将更改保存到记事本？";
-var todolist_confirm_clear = "是否清空内容？";
-var goods_name_not_null = "商品名称不能为空。";
-var goods_cat_not_null = "商品分类必须选择。";
-var category_cat_not_null = "分类名称不能为空";
-var brand_cat_not_null = "品牌名称不能为空";
-var goods_cat_not_leaf = "您选择的商品分类不是底级分类，请选择底级分类。";
-var shop_price_not_null = "本店售价不能为空。";
-var shop_price_not_number = "本店售价不是数值。";
-var select_please = "请选择...";
-var button_add = "添加";
-var button_del = "删除";
-var spec_value_not_null = "规格不能为空";
-var spec_price_not_number = "加价不是数字";
-var market_price_not_number = "市场价格不是数字";
-var goods_number_not_int = "商品库存不是整数";
-var warn_number_not_int = "库存警告不是整数";
-var promote_not_lt = "促销开始日期不能大于结束日期";
-var promote_start_not_null = "促销开始时间不能为空";
-var promote_end_not_null = "促销结束时间不能为空";
-var drop_img_confirm = "您确实要删除该图片吗？";
-var batch_no_on_sale = "您确实要将选定的商品下架吗？";
-var batch_trash_confirm = "您确实要把选中的商品放入回收站吗？";
-var go_category_page = "本页数据将丢失，确认要去商品分类页添加分类吗？";
-var go_brand_page = "本页数据将丢失，确认要去商品品牌页添加品牌吗？";
-var volume_num_not_null = "请输入优惠数量";
-var volume_num_not_number = "优惠数量不是数字";
-var volume_price_not_null = "请输入优惠价格";
-var volume_price_not_number = "优惠价格不是数字";
-var cancel_color = "无样式";
-//-->
 </script>
 </head>
 <body>
@@ -67,7 +29,7 @@ var cancel_color = "无样式";
   <form action="javascript:searchGoods()" name="searchForm">
     <img src="<?=base_url().'admin/images/icon_search.gif' ?>" width="26" height="22" border="0" alt="SEARCH" />
         <!-- 分类 -->
-    <select name="cat_id"><option value="0">所有分类</option><option value="21" >客餐厅</option><option value="77" >&nbsp;&nbsp;&nbsp;&nbsp;沙发茶几组合</option><option value="74" >&nbsp;&nbsp;&nbsp;&nbsp;餐桌组合</option><option value="33" >&nbsp;&nbsp;&nbsp;&nbsp;餐柜组合</option><option value="78" >&nbsp;&nbsp;&nbsp;&nbsp;吧台组合</option><option value="75" >&nbsp;&nbsp;&nbsp;&nbsp;隔断柜组合</option><option value="34" >&nbsp;&nbsp;&nbsp;&nbsp;羽绒服</option><option value="76" >&nbsp;&nbsp;&nbsp;&nbsp;牛仔裤</option><option value="73" >&nbsp;&nbsp;&nbsp;&nbsp;针织衫</option><option value="1" >卧房</option><option value="4" >&nbsp;&nbsp;&nbsp;&nbsp;衣帽间</option><option value="53" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据1</option><option value="54" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据2</option><option value="55" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据3</option><option value="69" >&nbsp;&nbsp;&nbsp;&nbsp;飘窗利用</option><option value="91" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据1</option><option value="92" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据2</option><option value="93" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据3</option><option value="5" >&nbsp;&nbsp;&nbsp;&nbsp;定制床</option><option value="94" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据3</option><option value="88" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据1</option><option value="89" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据2</option><option value="2" >&nbsp;&nbsp;&nbsp;&nbsp;米兰范儿卧房</option><option value="60" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据3</option><option value="84" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据6</option><option value="82" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据4</option><option value="58" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据1</option><option value="95" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据9</option><option value="85" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据7</option><option value="83" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据5</option><option value="59" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据2</option><option value="87" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据8</option><option value="3" >&nbsp;&nbsp;&nbsp;&nbsp;整体衣柜</option><option value="50" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据2</option><option value="51" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据3</option><option value="52" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据4</option><option value="49" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据1</option><option value="22" >厨房</option><option value="27" >&nbsp;&nbsp;&nbsp;&nbsp;U型</option><option value="79" >&nbsp;&nbsp;&nbsp;&nbsp;英伦晴风</option><option value="28" >&nbsp;&nbsp;&nbsp;&nbsp;新实用厨房</option><option value="29" >&nbsp;&nbsp;&nbsp;&nbsp;一字型</option><option value="26" >&nbsp;&nbsp;&nbsp;&nbsp;L型</option><option value="12" >充值卡</option><option value="14" >&nbsp;&nbsp;&nbsp;&nbsp;移动手机充值卡</option><option value="15" >&nbsp;&nbsp;&nbsp;&nbsp;联通手机充值卡</option><option value="13" >&nbsp;&nbsp;&nbsp;&nbsp;小灵通/固话充值卡</option><option value="23" >运动户外</option><option value="38" >&nbsp;&nbsp;&nbsp;&nbsp;运动包</option><option value="37" >&nbsp;&nbsp;&nbsp;&nbsp;运动鞋</option><option value="62" >建材</option><option value="64" >&nbsp;&nbsp;&nbsp;&nbsp;灯饰照明</option><option value="63" >&nbsp;&nbsp;&nbsp;&nbsp;卫浴用品</option><option value="20" >青少年房</option><option value="65" >&nbsp;&nbsp;&nbsp;&nbsp;衣柜组合</option><option value="30" >&nbsp;&nbsp;&nbsp;&nbsp;床组合</option><option value="68" >&nbsp;&nbsp;&nbsp;&nbsp;上下床组合</option><option value="31" >&nbsp;&nbsp;&nbsp;&nbsp;飘窗学习区</option><option value="66" >&nbsp;&nbsp;&nbsp;&nbsp;风衣</option><option value="32" >&nbsp;&nbsp;&nbsp;&nbsp;储物间</option><option value="67" >&nbsp;&nbsp;&nbsp;&nbsp;榻榻米</option><option value="90" >测试数据3</option><option value="6" >书房</option><option value="11" >&nbsp;&nbsp;&nbsp;&nbsp;榻榻米</option><option value="71" >&nbsp;&nbsp;&nbsp;&nbsp;多功能床</option><option value="7" >&nbsp;&nbsp;&nbsp;&nbsp;直角书桌组合</option><option value="45" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据4</option><option value="46" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据5</option><option value="72" >&nbsp;&nbsp;&nbsp;&nbsp;转角书桌组合</option><option value="8" >&nbsp;&nbsp;&nbsp;&nbsp;书柜组合</option><option value="47" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据6</option><option value="48" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据7</option><option value="9" >&nbsp;&nbsp;&nbsp;&nbsp;韩式田园书房</option><option value="41" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试数据</option><option value="39" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原装电池</option><option value="40" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电池测试2</option><option value="70" >&nbsp;&nbsp;&nbsp;&nbsp;绕线器</option><option value="81" >测试</option></select>
+    <select name="cat_id"><option value="0">所有分类</option><option value="21" >客餐厅</option><option value="77" >&nbsp;&nbsp;&nbsp;&nbsp;沙发茶几组合</option><option value="74" >&nbsp;&nbsp;&nbsp;&nbsp;餐桌组合</option><option value="33" >&nbsp;&nbsp;&nbsp;&nbsp;餐柜组合</option><option value="78" >&nbsp;&nbsp;&nbsp;&nbsp;吧台组合</option><option value="81" >测试</option></select>
     <!-- 品牌 -->
     <select name="brand_id"><option value="0">所有品牌</option><option value="1">诺基亚</option><option value="10">金立</option><option value="9">联想</option><option value="8">LG</option><option value="7">索爱</option><option value="6">三星</option><option value="5">夏新</option><option value="4">飞利浦</option><option value="3">多普达</option><option value="2">摩托罗拉</option><option value="11">  恒基伟业</option></select>
     <!-- 推荐 -->
@@ -134,7 +96,7 @@ var cancel_color = "无样式";
         <td align="right"><span onclick="listTable.edit(this, 'edit_goods_number', 34)">65535</span></td>
         <td align="center">
       <a href="../goods.php?id=34" target="_blank" title="查看"><img src="<?=base_url().'admin/images/icon_view.gif' ?>" width="16" height="16" border="0" /></a>
-      <a href="goods.php?act=edit&goods_id=34&extension_code=" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
+      <a href="<?=site_url('admin/goodsList/edit') ?>" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
       <a href="javascript:;" onclick="listTable.remove(34, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="<?=base_url().'admin/images/icon_trash.gif' ?>" width="16" height="16" border="0" /></a>
       <img src="<?=base_url().'admin/images/empty.gif' ?>" width="16" height="16" border="0" />          </td> 
   </tr>
