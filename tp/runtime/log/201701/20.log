@@ -1,0 +1,29 @@
+[ 2017-01-20T11:13:24+08:00 ] ::1 ::1 GET /www/www/tp/public/
+[ log ] localhost/www/www/tp/public/ [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,301.84kb] [文件加载：36]
+[ info ] [ LANG ] E:\minbingtuan\www\www\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'ci_session=a%3A18%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2240e76c7614c2454e08606347b1688cd8%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A108%3A%22Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.87+Safari%2F537.36%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1484881685%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3Bs%3A9%3A%22auth_code%22%3Bi%3A10459%3Bs%3A16%3A%22showmembermobile%22%3Bi%3A0%3Bs%3A16%3A%22showcustommobile%22%3Bs%3A1%3A%221%22%3Bs%3A11%3A%22companyType%22%3Bs%3A1%3A%220%22%3Bs%3A12%3A%22intentionOut%22%3Bs%3A1%3A%221%22%3Bs%3A15%3A%22manageCompanyID%22%3Bs%3A1%3A%221%22%3Bs%3A3%3A%22uid%22%3Bs%3A3%3A%22209%22%3Bs%3A8%3A%22username%22%3Bs%3A8%3A%22mbtcaiwu%22%3Bs%3A8%3A%22realName%22%3Bs%3A15%3A%22%E6%B0%91%E5%85%B5%E5%9B%A2%E8%B4%A2%E5%8A%A1%22%3Bs%3A8%3A%22usertype%22%3Bs%3A1%3A%229%22%3Bs%3A11%3A%22userproject%22%3Bs%3A1%3A%221%22%3Bs%3A6%3A%22status%22%3Bs%3A1%3A%221%22%3Bs%3A10%3A%22moduleurls%22%3Bs%3A660%3A%22%7C%7Cadmin%2FwxQRCode%2Findex%7C%7Cadmin%2FawardExcel%2Findex%7Cadmin%2Fpercentage%2Findex%2F1%7Cadmin%2FintentionAccount%2Findex%2F1%7Cadmin%2FpayFollowup%2Findex%2F1%7Cadmin%2FawardCommission%2Findex%2F1%7Cadmin%2Fapplication%2Findex%2F1%7Cadmin%2Fdeposit%2Findex%2F1%7Cadmin%2Fdepositback%2Findex%2F1%7Cadmin%2Fawardservice%2Findex%2F1%7Cadmin%2Faward%2Findex%2F1%7C%7Cadmin%2FintentionLvjv%2Findex%7Cadmin%2FliveIntention%2Findex%2F1%7Cadmin%2FintentionQuestion%2Findex%7Cadmin%2Fintention%2Findex%2F1%7C%7Cadmin%2FprojectInfoCard%2Findex%2F1%7Cadmin%2Fbailkeepconfig%2Findex%2F1%7Cadmin%2FBuildingdeposit%2Findex%2F1%7Cadmin%2FawardConfigMember%2Findex%2F1%7Cadmin%2Fawardconfigbuilding%2Findex%2F1%7Cadmin%2Fbuildinginfo%2Findex%2F1%7C%7Cadmin%2Fcurrency%2Findex%2F1%7Cadmin%2FmemberVip%2Findex%2F1%7Cadmin%2Fmember%2Findex%2F1%7C%7Cadmin%2Fuser%2Findex%7C%7C%22%3B%7Df796c19fc0f5d7a73c7f31fd7c8ecad3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\minbingtuan\www\www\tp\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -11,10 +11,12 @@
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/js/bootstrap-select.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/js/bootstrap.min.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/css/bootstrap-select.css' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/css/bootstrap.min.css' ?>"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?=base_url().'admin/css/bootstrap-select.css' ?>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="<?=base_url().'admin/js/bootstrap-select.js' ?>"></script>
 </head>
 <body>
 <script>
@@ -50,11 +52,11 @@
 
 <script>
   $(window).on('load', function () {
-    $('#usertype').selectpicker({
-        'selectedText': 'cat'
-    });
+  $('.selectpicker').selectpicker({
+    'selectedText': 'cat'
+  });
+  $('input[name!="salerteamid"]').css('display','inline');
 });
-</script>
 
 <h1>
 <span class="action-span"><a href="goods.php?act=list&uselastfilter=1">商品列表</a></span>
@@ -114,15 +116,35 @@
           <tr>
             <td class="label">商品颜色：</td>
             <td>
-            <select name="goodsColor" id="goodsColor"  class="selectpicker show-tick form-control" multiple data-live-search="true">
-              <option value="">请选择</option>
-            </select>
+
             <span class="require-field">(可多选)*</span></td>
           </tr>
           <tr>
             <td class="label">商品尺码：</td>
             <td><input type="text" id="goodsSize" name="goodsSize" size="20" onblur="priceSetted()"/>
             <span class="require-field">(可多选)*</span></td>
+            <select   name="projectInfoID" id="projectInfoID" class="selectpicker bla bla bli"  data-live-search="true" >
+            <option value="">请选择</option>
+          <?php foreach($projectList as $key=>$item): ?>
+            <option  value="<?=$item['id']?>" <?php if ($search['projectInfoID'] == $item['id']): ?>selected<?php endif; ?> ><?=$item['name']?></option>
+          <?php endforeach;?>
+          </select>
+
+
+
+          <div class="form-group">
+      <label for="maxOption2" class="col-lg-2 control-label">multiple, show-menu-arrow, maxOptions=2</label>
+
+      <div class="col-lg-10">
+        <select id="maxOption2" class="selectpicker show-menu-arrow form-control" multiple data-max-options="2">
+          <option>chicken</option>
+          <option>turkey</option>
+          <option disabled>duck</option>
+          <option>goose</option>
+        </select>
+      </div>
+    </div>
+
           </tr>
 </table>
        
