@@ -63,7 +63,7 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
-switch (ENVIRONMENT)
+switch ('development')
 {
 	case 'development':
 		error_reporting(-1);
@@ -71,6 +71,7 @@ switch (ENVIRONMENT)
 	break;
 
 	case 'testing':
+		error_reporting(E_ALL || ~E_NOTICE); //显示除去 E_NOTICE 之外的所有错误信息
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))

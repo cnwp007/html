@@ -17,7 +17,7 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="goods.php?act=add">添加新商品</a></span>
+<span class="action-span"><a href="<?=site_url('admin/goodsList/add') ?>">添加新商品</a></span>
 <span class="action-span1"><a href="index.php?act=main">管理中心</a> </span><span id="search_id" class="action-span1"> - 商品列表 </span>
 <div style="clear:both"></div>
 </h1>
@@ -96,7 +96,7 @@
         <td align="right"><span onclick="listTable.edit(this, 'edit_goods_number', 34)">65535</span></td>
         <td align="center">
       <a href="../goods.php?id=34" target="_blank" title="查看"><img src="<?=base_url().'admin/images/icon_view.gif' ?>" width="16" height="16" border="0" /></a>
-      <a href="<?=site_url('admin/goodsList/edit') ?>" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
+      <a href="<?=site_url('admin/goodsList/edit'.$item['id']) ?>" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
       <a href="javascript:;" onclick="listTable.remove(34, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="<?=base_url().'admin/images/icon_trash.gif' ?>" width="16" height="16" border="0" /></a>
       <img src="<?=base_url().'admin/images/empty.gif' ?>" width="16" height="16" border="0" />          </td> 
   </tr>

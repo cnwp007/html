@@ -16,7 +16,14 @@ class GoodsList extends CI_Controller {
     {
     	$post = $this->input->post();
     	if($post['save']=='save'){
-    		echo "保存";
+            $data['goodsName']  = $post['goodsName'];
+            $data['goodsNum']   = $post['goodsNum'];
+            $data['goodsPrice'] = $post['goodsPrice'];
+            $data['goodsStyle'] = $post['goodsStyle'];
+            $data['goodsColor'] = $post['goodsColor'];
+            $data['goodsSize']  = $post['goodsSize'];
+            $res = $this->Date_model->addData($data,'tb_goods');
+            var_dump($res);
     	}else{
     		$this->load->view('admin/goodsList_add');
     	}
@@ -26,8 +33,10 @@ class GoodsList extends CI_Controller {
     {
     	$post = $this->input->post();
     	if($post['save']=='save'){
+            $view = $this->Date_model->getSingle();
     		echo "保存";
     	}else{
+            $id = $this->uri->segment(4);
     		$this->load->view('admin/goodsList_add');
     	}
     }

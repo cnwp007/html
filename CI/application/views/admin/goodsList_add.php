@@ -74,6 +74,7 @@
       <form enctype="multipart/form-data" action="" method="post" id="theForm" name="theForm" >
         <!-- 最大文件限制 -->
         <input type="hidden" name="save" value="save" />
+        <input type="hidden" name="id" value="<?=isset($view['id'])?$view['id']:'' ?>" />
         <!-- 通用信息 -->
         <table width="90%" id="general-table" align="center">
           <tr>
@@ -90,7 +91,7 @@
           <tr>
             <td class="label">商品款式：</td>
             <td>
-            <select id="goodsStyle" name="goodsStyle" onchange="hideCatDiv()" class="selectpicker show-tick form-control" multiple data-live-search="false" >
+            <select id="goodsStyle" name="goodsStyle" onchange="hideCatDiv()" >
               <option value="">请选择...</option>
               <option value="21" >客餐厅</option>
               <option value="21" >客餐厅1</option>
@@ -100,13 +101,9 @@
               <option value="21" >客餐厅5</option>
               <option value="21" >客餐厅6</option>
             </select>
-              <a href="javascript:void(0)" onclick="rapidCatAdd()" title="添加分类" class="special">添加款式</a>
-              <span id="category_add" style="display:none;">
-              <input class="text" size="10" name="addedCategoryName" />
-               <a href="javascript:void(0)" onclick="addCategory()" title=" 确定 " class="special" > 确定 </a>
-               <a href="javascript:void(0)" onclick="hideCatDiv()" title="隐藏" class="special" ><<</a>
-               </span>
-                              <span class="require-field">*</span>            </td>
+
+              <span class="require-field">*</span>
+            </td>
           </tr>
           <tr>
             <td class="label">商品价格：</td>
@@ -116,12 +113,31 @@
           <tr>
             <td class="label">商品颜色：</td>
             <td>
-
+             <select id="goodsColor" name="goodsColor" onchange="hideCatDiv()" class="selectpicker show-tick form-control" multiple data-live-search="false" >
+              <option value="">请选择...</option>
+              <option value="21" >客餐厅</option>
+              <option value="21" >客餐厅1</option>
+              <option value="21" >客餐厅2</option>
+              <option value="21" >客餐厅3</option>
+              <option value="21" >客餐厅4</option>
+              <option value="21" >客餐厅5</option>
+              <option value="21" >客餐厅6</option>
+            </select>
             <span class="require-field">(可多选)*</span></td>
           </tr>
           <tr>
             <td class="label">商品尺码：</td>
-            <td><input type="text" id="goodsSize" name="goodsSize" size="20" onblur="priceSetted()"/>
+            <td>
+             <select id="goodsSize" name="goodsSize" onchange="hideCatDiv()" class="selectpicker show-tick form-control" multiple data-live-search="false" >
+              <option value="">请选择...</option>
+              <option value="21" >客餐厅</option>
+              <option value="21" >客餐厅1</option>
+              <option value="21" >客餐厅2</option>
+              <option value="21" >客餐厅3</option>
+              <option value="21" >客餐厅4</option>
+              <option value="21" >客餐厅5</option>
+              <option value="21" >客餐厅6</option>
+            </select>
             <span class="require-field">(可多选)*</span></td>
           </tr>
 </table>
