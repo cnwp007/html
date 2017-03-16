@@ -24,19 +24,145 @@
 
 <div id="body">
 
-  <div class="touchweb_header"  style="background-color: #43CB9D;"> <a class="hd_left hd_back"><i class="iconfont"><img src="<?=base_url().'home/images/back1.jpg' ?>"  style="width:1.6rem" onClick="javascript :history.back(-1);"></i></a> <span class="hd_title hd_title_style">这里是一个秒杀的专场</span> </div>
+  <div class="touchweb_header"  style="background-color: #43CB9D;"> <a class="hd_left hd_back"><i class="iconfont"><img src="<?=base_url().'home/images/back1.jpg' ?>"  style="width:1.6rem" onClick="javascript :history.back(-1);"></i></a> <span class="hd_title hd_title_style">马甲式系腰带短裙</span> </div>
 
   <div class="touchweb_content">
 
     
 
-    <div id="top_3202" data-tpcode="A-001" style="overflow: hidden;background-color:#">
+<!--     <div id="top_3202" data-tpcode="A-001" style="overflow: hidden;background-color:#">
 
       <div class="Top_pic"><a><img src="<?=base_url().'home/images/app161122040725.jpg' ?>" usemap="#map3783" style="width:100%"></a></div>
 
     </div>
+ -->
 
-      <div id="top_3203" data-tpcode="A-001" style="overflow: hidden;background-color:#">
+    <!-- 发挥 -->
+
+
+<div class="benner">
+
+<div class="scroll-box">
+
+  <div id="sw1446624384114" class="swiper-container container-point swiper-container-horizontal">
+
+    <div style="transition-duration: 0ms; transform: translate3d(-2560px, 0px, 0px);" class="swiper-wrapper">
+
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
+
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+    
+
+    
+
+    </div>
+
+    <div id="pa1446624384114" class="swiper-pagination pagination-point">
+
+      
+
+    
+
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
+          <span class="swiper-pagination-bullet "></span>
+
+      
+
+        </div>
+
+  </div>
+
+  <script src="<?=base_url().'home/js/swiper.js' ?>"></script>
+
+  <script>
+
+                var scrollstyle = $("#banner_1446624384114").find(".swiper-container");
+
+                $(scrollstyle).addClass("container-point");
+
+                $(scrollstyle).find(".swiper-wrapper").after("<div id='pa1446624384114' class='swiper-pagination pagination-point'></div>");
+
+                swiper_point_1446624384114();
+
+                function swiper_point_1446624384114() {
+
+                    var mySwiper = new Swiper('#sw1446624384114', {
+
+                        pagination: '#pa1446624384114',
+
+                        loop: true,//循环播放
+
+                        autoplay: 200,//自动播放速度
+
+                        lazyLoading: true,//延时加载
+
+                    });
+
+                }
+
+            </script>
+
+</div>
+
+
+<!-- 发挥完毕 -->
+
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+
+
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming1.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming2.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming3.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming4.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+<div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming5.jpg' ?>" style="width:100%; "> </a> </div>
+<br>
+
+      <!-- <div id="top_3203" data-tpcode="A-001" style="overflow: hidden;background-color:#">
 
      
 
@@ -113,7 +239,7 @@
 
       </div>
 
-    </div>
+    </div> -->
 
 <div style="display: none;" class="return_top"><i class="icon iconfont"></i></div>
 

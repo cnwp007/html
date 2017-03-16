@@ -20,39 +20,19 @@
 
 <script src="<?=base_url().'home/js/jquery.js' ?>"></script>
 
+<style>
+  .li{
+    margin: 20px auto;
+  }
+</style>
+
 </head>
 
 <body class="">
 
 <div id="body">
 
-<div class="touchweb_header" style="height: 2.2rem;
 
-background-color: #43CB9D;
-
-color: #fff;">
-
-  <div class="hd_left hd_logo"> <img src="<?=base_url().'home/images/app161122094813.jpg' ?>"   style="margin: 0.0rem 0rem 0rem 0.325rem;"></div>
-
-  <div class="hd_title hd_search"  style="background-color: #2F9D78;"> <span><i class="icon iconfont"><img src="<?=base_url().'home/images/soc.jpg' ?>"  style="width:80%; margin-top:7%;"></i></span>
-
-    <input placeholder="查找您喜欢的水果.." id="ckSearch" type="text"  style="padding: 0; height: 1.4rem;
-
-width: 10.5rem;
-
-float: left;
-
-border-radius: 0rem 0.2rem 0.2rem 0rem;
-
-font-size: 0.6rem;
-
-background-color: #2F9D78;
-
-color: #fff;">
-
-  </div>
-
-</div>
 
 <div class="touchweb_content">
 
@@ -340,7 +320,7 @@ margin-top: 0.575rem;">
 
   </div>
 
-  <div class="today_list">
+<!--   <div class="today_list">
 
          <div class="today_list_item"><a href="activities?id=1" class="stats" data-position="P_today_list0" data-category="C_today_list0"><img src="<?=base_url().'home/images/app161122103007.jpg' ?>" ></a></div>
 
@@ -354,13 +334,66 @@ margin-top: 0.575rem;">
 
       </div>
 
-</div>
+</div> -->
+
+
+<ul>
+  <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian2.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">连衣裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+  </li>
+  <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian3.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">马甲式腰带短裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+</li>
+  <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian1.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">小黑裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+</li>
+ <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian3.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">马甲式腰带短裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+</li>
+ <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian3.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">马甲式腰带短裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+</li>
+ <li>
+  <div style="width:49%;float:left;padding:10px 0px;">
+    <div style="width:90%;margin:0px auto;border:1px solid gray;"><a href="activities?id=1" data-position="P_today_list0" data-category="C_today_list0"><img style="height:500px;" src="<?=base_url().'home/images/tupian3.jpg' ?>" ></a>
+    <div style="width:100%;font-size:14px;text-align:center;margin:5px auto;">马甲式腰带短裙</div>
+    <div style="width:100%;font-size:14px;text-align:center;color:gold;margin:5px auto;">￥399</div>
+    </div>
+  </div>
+</li>
+
+</ul>
+<div style="clear:both;"></div>
 
 
 
 
-
-
+<!-- 
 
 <div class="TP_title">
 
@@ -442,9 +475,9 @@ margin-top: 0.575rem;">
 
       </a> </li>
 
-      </ul>
+      </ul> -->
 
-  <div style="width:100%; margin-top:7px; height:87px;"></div>
+ <!--  <div style="width:100%; margin-top:7px; height:87px;"></div>
 
 </div>
 
@@ -472,7 +505,7 @@ background-color: #2F9D78;">
 
   </div>
 
-</div>
+</div> -->
 
 
 
