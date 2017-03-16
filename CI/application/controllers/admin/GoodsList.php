@@ -22,8 +22,7 @@ class GoodsList extends CI_Controller {
             $data['goodsStyle'] = $post['goodsStyle'];
             $data['goodsColor'] = $post['goodsColor'];
             $data['goodsSize']  = $post['goodsSize'];
-            $res = $this->Date_model->addData($data,'tb_goods');
-            var_dump($res);
+            $res = $this->Data_model->addData($data,'tb_goods');
     	}else{
     		$this->load->view('admin/goodsList_add');
     	}

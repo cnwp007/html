@@ -4,11 +4,30 @@
 <title>管理中心 - 编辑商品信息 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="<?=base_url().'admin/js/jquery-1.8.3.min.js' ?>"></script>
 <link href="<?=base_url().'admin/css/general.css' ?>" rel="stylesheet" type="text/css" />
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
+
+
+<script src="<?=base_url().'admin/js/jquery-1.10.2.js' ?>"></script>
+<script type="text/javascript" src="<?=base_url().'admin/js/bootstrap-select.js' ?>"></script>
+ <link rel="stylesheet" type="text/css" href="<?=base_url().'admin/css/bootstrap-select.css' ?>">
+  <!-- 3.0 -->
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <!-- 2.3.2
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+ <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
+    -->
+  <script type="text/javascript">   
+    $(window).on('load', function () {          
+      $('.selectpicker').selectpicker({
+          'selectedText': 'cat'
+      });        
+     // $('.selectpicker').selectpicker('hide');
+    }); 
+  </script>
 </head>
 <body>
 <script>
@@ -41,35 +60,14 @@
   }
 </script>
 
-
-<script>
-  $(window).on('load', function () {
-  $('.selectpicker').selectpicker({
-    'selectedText': 'cat'
-  });
-  $('input[name!="salerteamid"]').css('display','inline');
-});
-</script>
 <h1>
 <span class="action-span"><a href="goods.php?act=list&uselastfilter=1">商品列表</a></span>
-<span class="action-span1"><a href="index.php?act=main">  管理中心</a> </span><span id="search_id" class="action-span1"> - 编辑商品信息 </span>
+<span class="action-span1"><a href="index.php?act=main">管理中心</a> </span><span id="search_id" class="action-span1"> - 编辑商品信息 </span>
 <div style="clear:both"></div>
 </h1>
 <link href="<?=base_url().'admin/css/calendar.css' ?>" rel="stylesheet" type="text/css" />
 
-
-<!-- start goods form -->
 <div class="tab-div">
-    <!-- tab bar -->
-<!--     <div id="tabbar-div">
-      <p>
-        <span class="tab-front" id="general-tab">通用信息</span>
-        <span class="tab-back" id="properties-tab">商品属性</span>
-        <span class="tab-back" id="gallery-tab">商品相册</span>
-      </p>
-    </div> -->
-
-    <!-- tab body -->
     <div id="tabbody-div">
       <form enctype="multipart/form-data" action="" method="post" id="theForm" name="theForm" >
         <!-- 最大文件限制 -->
@@ -113,7 +111,7 @@
           <tr>
             <td class="label">商品颜色：</td>
             <td>
-             <select id="goodsColor" name="goodsColor" onchange="hideCatDiv()" class="selectpicker show-tick form-control" multiple data-live-search="false" >
+             <select id="goodsColor" name="goodsColor" onchange="hideCatDiv()" class="selectpicker bla bla bli" multiple data-live-search="true">
               <option value="">请选择...</option>
               <option value="21" >客餐厅</option>
               <option value="21" >客餐厅1</option>
@@ -128,7 +126,7 @@
           <tr>
             <td class="label">商品尺码：</td>
             <td>
-             <select id="goodsSize" name="goodsSize" onchange="hideCatDiv()" class="selectpicker show-tick form-control" multiple data-live-search="false" >
+             <select id="goodsSize" name="goodsSize" onchange="hideCatDiv()" class="selectpicker bla bla bli" multiple data-live-search="true">
               <option value="">请选择...</option>
               <option value="21" >客餐厅</option>
               <option value="21" >客餐厅1</option>
@@ -140,18 +138,17 @@
             </select>
             <span class="require-field">(可多选)*</span></td>
           </tr>
-</table>
+        </table>
        
       </form>
     </div>
 </div>
-<!-- end goods form -->
 
 
  <div class="button-div">
-                    <input type="button" value=" 确定 " class="button" onclick="checkData()" />
-          <!-- <input type="reset" value=" 重置 " class="button" /> -->
-        </div>
+      <input type="button" value=" 确定 " class="button" onclick="checkData()" />
+    <!-- <input type="reset" value=" 重置 " class="button" /> -->
+  </div>
 <!-- 新订单提示信息 -->
 
 </body>
