@@ -49,18 +49,10 @@
     <div style="transition-duration: 0ms; transform: translate3d(-2560px, 0px, 0px);" class="swiper-wrapper">
 
 
-      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:600px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
 
 
-      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
-
-    
-
-  
-
-      
-
-      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:600px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
 
     
 
@@ -68,7 +60,15 @@
 
       
 
-      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:600px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+
+    
+
+  
+
+      
+
+      <div style="width: 640px;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:600px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
 
     
 
