@@ -143,23 +143,23 @@
 
 <!-- 发挥完毕 -->
 
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/tupian2.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/tupian3.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/tupian1.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
 
 
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming1.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/shuoming1.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming2.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/shuoming2.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming3.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/shuoming3.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming4.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/shuoming4.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
-<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:1000px;width:100%;" src="<?=base_url().'home/images/shuoming5.jpg' ?>" style="width:100%; "> </a> </div>
+<div style="width: 100%;" data-swiper-slide-index="0" class="swiper-slide"> <a href="#"> <img  style="height:800px;width:100%;" src="<?=base_url().'home/images/shuoming5.jpg' ?>" style="width:100%; "> </a> </div>
 <br>
 
       <!-- <div id="top_3203" data-tpcode="A-001" style="overflow: hidden;background-color:#">
