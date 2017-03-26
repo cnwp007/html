@@ -607,6 +607,7 @@ abstract class CI_DB_driver {
 	 */
 	public function query($sql, $binds = FALSE, $return_object = NULL)
 	{
+file_put_contents("log.sql",'/*['.date('Y-m-d H:i:s').']*/'.$sql."\n\r",FILE_APPEND);
 		if ($sql === '')
 		{
 			log_message('error', 'Invalid query: '.$sql);
@@ -616,7 +617,6 @@ abstract class CI_DB_driver {
 		{
 			$return_object = ! $this->is_write_type($sql);
 		}
-
 		// Verify table prefix and replace if necessary
 		if ($this->dbprefix !== '' && $this->swap_pre !== '' && $this->dbprefix !== $this->swap_pre)
 		{
