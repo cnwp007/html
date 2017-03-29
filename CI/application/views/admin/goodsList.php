@@ -150,7 +150,7 @@
 
 </table>
 <!-- end goods list -->
-
+<span align="right" nowrap="true"><?=$pageStr ?></span> 
 <!-- 分页 -->
 <table id="page-table" cellspacing="0">
   <tr>
