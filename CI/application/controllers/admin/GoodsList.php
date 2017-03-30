@@ -19,7 +19,12 @@ class GoodsList extends CI_Controller {
         $goodsSizeList = $this->Data_model->getData('select * from tb_goodsSize where status=1');
 
         $pages = $this->Data_model->getDataNum($getwhere,'tb_goods');
-
+$pagearr=array(
+            'currentpage'=> $page,
+            'totalnum'=>$totalnum['rownum'],
+            'pagenum'=>$pagenum
+        );
+        $pagestr=show_page($pagearr,$search);
         // 分页
         $this->load->library('pagination');
         $config['base_url'] = site_url().'/admin/goodsList/index';
