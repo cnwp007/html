@@ -8,26 +8,7 @@
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
-
-
-<script src="<?=base_url().'admin/js/jquery-1.10.2.js' ?>"></script>
-<script type="text/javascript" src="<?=base_url().'admin/js/bootstrap-select.js' ?>"></script>
- <link rel="stylesheet" type="text/css" href="<?=base_url().'admin/css/bootstrap-select.css' ?>">
-  <!-- 3.0 -->
-  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  <!-- 2.3.2
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
- <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
-    -->
-  <script type="text/javascript">   
-    $(window).on('load', function () {          
-      $('.selectpicker').selectpicker({
-          'selectedText': 'cat'
-      });        
-     // $('.selectpicker').selectpicker('hide');
-    }); 
-  </script>
+<script type="text/javascript" src="<?=base_url().'admin/js/jquery.min.js' ?>"></script>
 </head>
 <body>
 <script>
@@ -61,11 +42,10 @@
 </script>
 
 <h1>
-<span class="action-span"><a href="goods.php?act=list&uselastfilter=1">商品列表</a></span>
-<span class="action-span1"><a href="index.php?act=main">管理中心</a> </span><span id="search_id" class="action-span1"> - 编辑商品信息 </span>
+<span class="action-span"><a href="<?=site_url('admin/goodsList/index') ?>">商品列表</a></span>
+<span class="action-span1"><a href="index.php?act=main">管理中心</a> </span><span id="search_id" class="action-span1"> - 添加商品信息 </span>
 <div style="clear:both"></div>
 </h1>
-<link href="<?=base_url().'admin/css/calendar.css' ?>" rel="stylesheet" type="text/css" />
 
 <div class="tab-div">
     <div id="tabbody-div">

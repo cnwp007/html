@@ -11,8 +11,6 @@
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
-<script language="JavaScript">
-</script>
 </head>
 <body>
 
@@ -26,61 +24,60 @@
 <!-- 商品搜索 -->
 <!-- $Id: goods_search.htm 16790 2009-11-10 08:56:15Z wangleisvn $ -->
 <div class="form-div">
-  <form action="javascript:searchGoods()" name="searchForm">
+  <form action="" name="searchForm" method="post">
     <img src="<?=base_url().'admin/images/icon_search.gif' ?>" width="26" height="22" border="0" alt="SEARCH" />
         <!-- 分类 -->
     <select name="goodsStyle">
       <option value="0">所有款式</option>
       <?php foreach ($goodsStyleList as $key => $value): ?>
-        <option value="<?=$value['id'] ?>" ><?=$value['goodsStyleName'] ?></option>
+        <option value="<?=$value['id'] ?>" <?php if($search['goodsStyle']==$value['id']){ echo 'selected';} ?> ><?=$value['goodsStyleName'] ?></option>
       <?php endforeach ?>
     </select>
 
     <select name="goodsColor">
       <option value="0">所有颜色</option>
       <?php foreach ($goodsColorList as $key => $value): ?>
-        <option value="<?=$value['id'] ?>" ><?=$value['goodsColorName'] ?></option>
+        <option value="<?=$value['id'] ?>" <?php if($search['goodsColor']==$value['id']){ echo 'selected';} ?> ><?=$value['goodsColorName'] ?></option>
       <?php endforeach ?>
     </select>
 
     <select name="goodsSize">
       <option value="0">所有号码</option>
       <?php foreach ($goodsSizeList as $key => $value): ?>
-        <option value="<?=$value['id'] ?>" ><?=$value['goodsSizeName'] ?></option>
+        <option value="<?=$value['id'] ?>" <?php if($search['goodsSize']==$value['id']){ echo 'selected';} ?> ><?=$value['goodsSizeName'] ?></option>
       <?php endforeach ?>
     </select>
 
       <!-- 上架 -->
-      <select name="isOnSale"><option value=''>是否上架</option><option value="1">上架</option><option value="0">下架</option></select>
+      <select name="isOnSale">
+      <option value='' <?php if($search['isOnSale']===''){ echo 'selected';} ?> >是否上架</option>
+      <option value="1" <?php if($search['isOnSale']==='1'){ echo 'selected';} ?> >上架</option>
+      <option value="0" <?php if($search['isOnSale']==='0'){ echo 'selected';} ?> >下架</option></select>
 
-      <select name="isBest"><option value=''>是否精品</option><option value="1">精品</option><option value="0">非精品</option></select>
+      <select name="isBest">
+        <option value='' <?php if($search['isBest']===''){ echo 'selected';} ?> >是否精品</option>
+        <option value="1" <?php if($search['isBest']==='1'){ echo 'selected';} ?> >精品</option>
+        <option value="0" <?php if($search['isBest']==='0'){ echo 'selected';} ?> >非精品</option>
+      </select>
 
-      <select name="isNew"><option value=''>是否新品</option><option value="1">新品</option><option value="0">非新品</option></select>
+      <select name="isNew">
+        <option value='' <?php if($search['isNew']===''){ echo 'selected';} ?> >是否新品</option>
+        <option value="1" <?php if($search['isNew']==='1'){ echo 'selected';} ?> >新品</option>
+        <option value="0" <?php if($search['isNew']==='0'){ echo 'selected';} ?> >非新品</option>
+      </select>
 
-      <select name="isHot"><option value=''>是否热销</option><option value="1">热销</option><option value="0">非热销</option></select>
+      <select name="isHot">
+        <option value='' <?php if($search['isHot']===''){ echo 'selected';} ?> >是否热销</option>
+        <option value="1" <?php if($search['isHot']==='1'){ echo 'selected';} ?> >热销</option>
+        <option value="0" <?php if($search['isHot']==='0'){ echo 'selected';} ?> >非热销</option>
+      </select>
         <!-- 关键字 -->
-    商品名称 <input type="text" name="goodsName" size="15" />
+    商品名称 <input type="text" name="goodsName" size="15" value="<?=isset($search['goodsName'])?$search['goodsName']:''  ?>" />
     <input type="submit" value=" 搜索 " class="button" />
   </form>
 </div>
 
 
-<script language="JavaScript">
-    function searchGoods()
-    {
-
-                listTable.filter['cat_id'] = document.forms['searchForm'].elements['cat_id'].value;
-        listTable.filter['brand_id'] = document.forms['searchForm'].elements['brand_id'].value;
-        listTable.filter['intro_type'] = document.forms['searchForm'].elements['intro_type'].value;
-                    listTable.filter['suppliers_id'] = document.forms['searchForm'].elements['suppliers_id'].value;
-                  listTable.filter['is_on_sale'] = document.forms['searchForm'].elements['is_on_sale'].value;
-        
-        listTable.filter['keyword'] = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
-        listTable.filter['page'] = 1;
-
-        listTable.loadList();
-    }
-</script>
 <!-- 商品列表 -->
 <form method="post" action="" name="listForm" onsubmit="return confirmSubmit(this)">
   <!-- start goods list -->
@@ -150,12 +147,11 @@
 
 </table>
 <!-- end goods list -->
-<span align="right" nowrap="true"><?=$pageStr ?></span> 
+<div align="right" nowrap="true" style="width:90%;"><?=$pageStr ?></div> 
 <!-- 分页 -->
-<table id="page-table" cellspacing="0">
+<!-- <table id="page-table" cellspacing="0">
   <tr>
     <td align="right" nowrap="true">
-          <!-- $Id: page.htm 14216 2008-03-10 02:27:21Z testyang $ -->
             <div id="turn-page">
         总计  <span id="totalRecords">22</span>
         个记录分为 <span id="totalPages">2</span>
@@ -172,7 +168,7 @@
       </div>
     </td>
   </tr>
-</table>
+</table> -->
 
 </div>
 
@@ -257,8 +253,7 @@
 // document.write('<img class=topicwidth width="' + topic_width + '" height="' + topic_height + '" border="0" src="../' + img_url + '">');
 </script>
 <div id="footer">
-共执行 7 个查询，用时 0.013000 秒，Gzip 已禁用，内存占用 3.421 MB<br />
-&copy; 2005-2015 ECSHOP 版权所有，并保留所有权利。
+版权所有
 </div>
 <!-- 新订单提示信息 -->
 <div id="popMsg">
