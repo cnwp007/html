@@ -35,16 +35,16 @@
     </select>
 
     <select name="goodsColor">
-      <option value="0">所有颜色</option>
+      <option value="">所有颜色</option>
       <?php foreach ($goodsColorList as $key => $value): ?>
-        <option value="<?=$value['id'] ?>" <?php if($search['goodsColor']==$value['id']){ echo 'selected';} ?> ><?=$value['goodsColorName'] ?></option>
+        <option value="<?=$value['goodsColorName'] ?>" <?php if($search['goodsColor']==$value['goodsColorName']){ echo 'selected';} ?> ><?=$value['goodsColorName'] ?></option>
       <?php endforeach ?>
     </select>
 
     <select name="goodsSize">
-      <option value="0">所有号码</option>
+      <option value="">所有号码</option>
       <?php foreach ($goodsSizeList as $key => $value): ?>
-        <option value="<?=$value['id'] ?>" <?php if($search['goodsSize']==$value['id']){ echo 'selected';} ?> ><?=$value['goodsSizeName'] ?></option>
+        <option value="<?=$value['goodsSizeName'] ?>" <?php if($search['goodsSize']==$value['goodsSizeName']){ echo 'selected';} ?> ><?=$value['goodsSizeName'] ?></option>
       <?php endforeach ?>
     </select>
 
@@ -53,12 +53,6 @@
       <option value='' <?php if($search['isOnSale']===''){ echo 'selected';} ?> >是否上架</option>
       <option value="1" <?php if($search['isOnSale']==='1'){ echo 'selected';} ?> >上架</option>
       <option value="0" <?php if($search['isOnSale']==='0'){ echo 'selected';} ?> >下架</option></select>
-
-      <select name="isBest">
-        <option value='' <?php if($search['isBest']===''){ echo 'selected';} ?> >是否精品</option>
-        <option value="1" <?php if($search['isBest']==='1'){ echo 'selected';} ?> >精品</option>
-        <option value="0" <?php if($search['isBest']==='0'){ echo 'selected';} ?> >非精品</option>
-      </select>
 
       <select name="isNew">
         <option value='' <?php if($search['isNew']===''){ echo 'selected';} ?> >是否新品</option>
@@ -94,7 +88,6 @@
     <th><a href="javascript:listTable.sort('shop_price'); ">颜色</a></th>
     <th><a href="javascript:listTable.sort('shop_price'); ">号码</a></th>
     <th><a href="javascript:listTable.sort('is_on_sale'); ">上架</a></th>
-    <th><a href="javascript:listTable.sort('is_best'); ">精品</a></th>
     <th><a href="javascript:listTable.sort('is_new'); ">新品</a></th>
     <th><a href="javascript:listTable.sort('is_hot'); ">热销</a></th>
     <th><a href="javascript:listTable.sort('sort_order'); ">推荐排序</a></th>
@@ -110,16 +103,10 @@
     <td align="right"><span><?=$value['goodsPrice'] ?>
     </span></td>
     <td align="center"><span><?=$value['goodsStyleName'] ?></span></td>
-    <td align="center"><span><?=$value['goodsColorName'] ?></span></td>
-    <td align="center"><span><?=$value['goodsSizeName'] ?></span></td>
+    <td align="center"><span><?=$value['goodsColor']  ?></span></td>
+    <td align="center"><span><?=$value['goodsSize'] ?></span></td>
     <td align="center">
     <?php if($value['isOnSale']=='1'){ ?>
-      <img src="<?=base_url().'admin/images/yes.gif' ?>" /></td>
-    <?php }else{ ?>
-      <img src="<?=base_url().'admin/images/no.gif' ?>" /></td>
-    <?php } ?>
-    <td align="center">
-    <?php if($value['isBest']=='1'){ ?>
       <img src="<?=base_url().'admin/images/yes.gif' ?>" /></td>
     <?php }else{ ?>
       <img src="<?=base_url().'admin/images/no.gif' ?>" /></td>
@@ -139,7 +126,7 @@
     <td align="center"><span>100</span></td>
         <td align="right"><span>65535</span></td>
         <td align="center">
-      <a href="<?=site_url('admin/goodsList/edit'.$item['id']) ?>" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
+      <a href="<?=site_url('admin/goodsList/edit/'.$value['id']) ?>" title="编辑"><img src="<?=base_url().'admin/images/icon_edit.gif' ?>" width="16" height="16" border="0" /></a>
       <a href="javascript:;" onclick="listTable.remove(<?=$value['id'] ?>, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="<?=base_url().'admin/images/icon_trash.gif' ?>" width="16" height="16" border="0" /></a>
       <img src="<?=base_url().'admin/images/empty.gif' ?>" width="16" height="16" border="0" />          </td> 
   </tr>

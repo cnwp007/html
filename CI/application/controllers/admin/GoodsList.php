@@ -34,11 +34,11 @@ class GoodsList extends CI_Controller {
         if($search['goodsStyle']>0){
             $getwhere .= ' and goodsStyle='.$search['goodsStyle'];
         }
-        if($search['goodsColor']>0){
-            $getwhere .= ' and goodsColor='.$search['goodsColor'];
+        if($search['goodsColor']!=''){
+            $getwhere .= " and goodsColor like '%".$search['goodsColor']."%'";
         }
-        if($search['goodsSize']>0){
-            $getwhere .= ' and goodsSize='.$search['goodsSize'];
+        if($search['goodsSize']!=''){
+            $getwhere .= " and goodsSize like '%".$search['goodsSize']."%'";
         }
         if($search['isOnSale']!=''){
             $getwhere .= ' and isOnSale='.$search['isOnSale'];
@@ -67,7 +67,7 @@ class GoodsList extends CI_Controller {
         $config['total_rows'] = $pages;
         $this->pagination->initialize($config);
         $pageStr = $this->pagination->create_links();
-        $view = $this->Data_model->getData('select g.*,gc.goodsColorName,gs.goodsStyleName,gz.goodsSizeName from tb_goods g left join tb_goodsColor gc on g.goodsColor=gc.id left join tb_goodsStyle gs on g.goodsStyle=gs.id left join tb_goodsSize gz on g.goodsSize=gz.id where g.isDelected=0 '.$getwhere.' order by g.addTime desc limit '.$currentPage.',10');
+        $view = $this->Data_model->getData('select g.*,gs.goodsStyleName from tb_goods g left join tb_goodsStyle gs on g.goodsStyle=gs.id where g.isDelected=0 '.$getwhere.' order by g.addTime desc limit '.$currentPage.',10');
         $goodsColorList = $this->Data_model->getData('select * from tb_goodsColor where status=1');
         $goodsStyleList = $this->Data_model->getData('select * from tb_goodsStyle where status=1');
         $goodsSizeList = $this->Data_model->getData('select * from tb_goodsSize where status=1');
@@ -91,27 +91,71 @@ class GoodsList extends CI_Controller {
             $data['goodsNum']   = $post['goodsNum'];
             $data['goodsPrice'] = $post['goodsPrice'];
             $data['goodsStyle'] = $post['goodsStyle'];
-            $data['goodsColor'] = $post['goodsColor'];
-            $data['goodsSize']  = $post['goodsSize'];
+            if(!empty($post['goodsColor'])){
+                $data['goodsColor'] = implode($post['goodsColor'], ',');
+            }
+            if(!empty($post['goodsSize'])){
+                $data['goodsSize']  = implode($post['goodsSize'], ',');
+            }
+            $data['isNew'] = $post['isNew'];
+            $data['isHot'] = $post['isHot'];
+
             $data['addTime']  = date('Y-m-d H:i:s',time());
             $res = $this->Data_model->addData($data,'tb_goods');
             if($res>0){
                 redirect('admin/goodsList/index');
             }
     	}else{
-    		$this->load->view('admin/goodsList_add');
+            $goodsColorList = $this->Data_model->getData('select * from tb_goodsColor where status=1');
+            $goodsStyleList = $this->Data_model->getData('select * from tb_goodsStyle where status=1');
+            $goodsSizeList = $this->Data_model->getData('select * from tb_goodsSize where status=1');
+            $res = array(
+                'goodsColorList' => $goodsColorList,
+                'goodsStyleList' => $goodsStyleList,
+                'goodsSizeList' => $goodsSizeList,
+                );
+    		$this->load->view('admin/goodsList_add',$res);
     	}
     }
 
     public function edit()
     {
     	$post = $this->input->post();
-    	if($post['save']=='save'){
-            $view = $this->Date_model->getSingle();
-    		echo "保存";
-    	}else{
-            $id = $this->uri->segment(4);
-    		$this->load->view('admin/goodsList_add');
+        $gID = $this->uri->segment(4);
+        if($post['save']=='save'){
+            $data['goodsName']  = $post['goodsName'];
+            $data['goodsNum']   = $post['goodsNum'];
+            $data['goodsPrice'] = $post['goodsPrice'];
+            $data['goodsStyle'] = $post['goodsStyle'];
+            if(!empty($post['goodsColor'])){
+                $data['goodsColor'] = json_encode($post['goodsColor']);
+            }
+            if(!empty($post['goodsSize'])){
+                $data['goodsSize']  = json_encode($post['goodsSize']);
+            }
+            $data['isNew'] = $post['isNew'];
+            $data['isHot'] = $post['isHot'];
+
+            $data['addTime']  = date('Y-m-d H:i:s',time());
+            $datawhere = array('id'=>$gID);
+            $res = $this->Data_model->editData($datawhere,$data,'tb_goods');
+            if($res>0){
+                redirect('admin/goodsList/index');
+            }
+        }else{
+            if($gID>0){
+                $view = $this->Data_model->getSingle('select g.*,gs.goodsStyleName from tb_goods g left join tb_goodsStyle gs on g.goodsStyle=gs.id where g.isDelected=0 and g.id='.$gID);
+            }
+            $goodsColorList = $this->Data_model->getData('select * from tb_goodsColor where status=1');
+            $goodsStyleList = $this->Data_model->getData('select * from tb_goodsStyle where status=1');
+            $goodsSizeList = $this->Data_model->getData('select * from tb_goodsSize where status=1');
+            $res = array(
+                'view' => $view,
+                'goodsColorList' => $goodsColorList,
+                'goodsStyleList' => $goodsStyleList,
+                'goodsSizeList' => $goodsSizeList,
+                );
+    		$this->load->view('admin/goodsList_add',$res);
     	}
     }
 
