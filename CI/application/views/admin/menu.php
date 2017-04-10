@@ -195,7 +195,7 @@ parent.drag_frame.document.getElementById('img');
           <li><a href="brand.php?act=list" target="main_frame">商品品牌</a></li>
           <li><a href="goods_type.php?act=manage" target="main_frame">商品类型</a></li>
           <li><a href="goods.php?act=trash" target="main_frame">商品回收站</a></li>
-          <li><a href="picture_batch.php" target="main_frame">图片批量处理</a></li>
+          <li><a href="<?=site_url('admin/picture_batch') ?>" target="main_frame">图片批量处理</a></li>
           <li><a href="goods_batch.php?act=add" target="main_frame">商品批量上传</a></li>
           <li><a href="goods_export.php?act=goods_export" target="main_frame">商品批量导出</a></li>
           <li><a href="goods_batch.php?act=select" target="main_frame">商品批量修改</a></li>
