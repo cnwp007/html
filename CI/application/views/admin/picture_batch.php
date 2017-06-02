@@ -11,6 +11,19 @@
 <link href="<?=base_url().'admin/css/main.css' ?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=base_url().'admin/js/transport.js' ?>"></script>
 <script type="text/javascript" src="<?=base_url().'admin/js/common.js' ?>"></script>
+
+<link rel="stylesheet" type="text/css" href="<?=base_url().'admin/css/pics.css' ?>" />
+<style type="text/css">
+#module_list{margin-left:4px}
+.modules1{float:left; width:200px; height:140px; margin:10px; overflow:hidden; border:1px solid #acc6e9; background:#e8f5fe}
+.m_title{height:24px; line-height:24px; background:#afc6e9}
+#loader{height:24px; text-align:center}
+.clear{clear:both}
+</style>
+<script type="text/javascript" src="<?=base_url().'admin/js/jquery.min.js' ?>"></script>
+<script type="text/javascript" src="<?=base_url().'admin/js/jquery-ui.min.js' ?>"></script>
+<script type="text/javascript" src="<?=base_url().'admin/js/idrag.js' ?>"></script>
+
 </head>
 <body>
 
@@ -73,126 +86,78 @@
 
 
 <!-- 商品列表 -->
-<form method="post" action="" name="listForm" onsubmit="return confirmSubmit(this)">
-<!-- start goods list -->
- <div class="bg bor3 mod-album js-album-item js-album-transition" data-allowaccess="1" data-anonymity="0" data-bitmap="11000000" data-classid="106" data-comment="0" data-createtime="1339145027" data-desc="" data-handset="11" data-id="V1024pRt4TSYT8" data-lastuploadtime="1339145029" data-modifytime="1364611003" data-name="微博相册" data-order="0" data-pre="http://b98.photo.store.qq.com/psb?/V1024pRt4TSYT8/jf1tH.cVYbaLQfeaxjCRkGtHdA1u39LxsLsDsJtXO3o!/a/YbHhdTp0dgAAYva8bzoNdwAA" data-priv="3" data-pypriv="3" data-total="1" data-viewtype="0" data-autoxss="true" aorder="0" style="width:150px;top:0px;left:0px;">
-  <div class="album-bd js-album-item-imgBox" style="height:142px;">
-   <a href="javascript:;" class="album-cover js-album-cover" data-hottag="list.albumcover">
-    <img class="js-cover-img" src="http://b98.photo.store.qq.com/psb?/V1024pRt4TSYT8/jf1tH.cVYbaLQfeaxjCRkGtHdA1u39LxsLsDsJtXO3o!/m/YbHhdTp0dgAAYva8bzoNdwAA&amp;rf=albumlist&amp;t=5" onload="this.onload=null;preLoadNoScale(this,'http://b98.photo.store.qq.com/psb?/V1024pRt4TSYT8/jf1tH.cVYbaLQfeaxjCRkGtHdA1u39LxsLsDsJtXO3o!/m/YbHhdTp0dgAAYva8bzoNdwAA',150,142);" style="width: 222.467px; height: 142px; margin-top: 0px; margin-left: -36px;">
-    <span class="pic-num-wrap"><span class="pic-num">1</span></span>   </a>   <div class="js-mod-photo-op mod-photo-op">
-    <span class="photo-op-tip js-album-op-tip" style="display: none;" title="编辑或删除"><i class="icon-m icon-expansion-m"></i></span>
-    <div class="photo-op-list js-album-op-list" style="display: none;">
-     <ul>
-      <li>
-       <a href="javascript:;" class="js-album-modify" data-hottag="list.edit_bianjixiangce"><i class="icon-m icon-edit-m"></i>编辑</a>
-      </li>
-      <li>
-       <a href="javascript:;" class="js-album-setLimit" data-hottag="list.edit_setpriv"><i class="icon-m icon-limitop-m"></i>权限设置</a>
-      </li>
-      <li>
-       <a href="javascript:;" class="js-album-makeCover" data-hottag="list.zzfm"><i class="icon-m icon-cover-m"></i>制作封面</a>
-      </li>
-      <li>
-       <a href="javascript:;" class="js-album-delete" data-hottag="list.edit_deletalbum"><i class="icon-m icon-rubbish-m"></i>删除</a>
-      </li>
-     </ul>
-    </div>
+
+<div id="main">
+  <div id="loader"></div>
+  <div id="module_list">
+   <input type="hidden" id="orderlist" value="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17" />
+      <div class="modules" title="1">
+      <h3 class="m_title">Module:1</h3>
+      <p>1</p>
    </div>
+      <div class="modules" title="2">
+      <h3 class="m_title">Module:2</h3>
+      <p>2</p>
+   </div>
+      <div class="modules" title="3">
+      <h3 class="m_title">Module:3</h3>
+      <p>3</p>
+   </div>
+      <div class="modules" title="4">
+      <h3 class="m_title">Module:4</h3>
+      <p>4</p>
+   </div>
+      <div class="modules" title="5">
+      <h3 class="m_title">Module:5</h3>
+      <p>5</p>
+   </div>
+      <div class="modules" title="6">
+      <h3 class="m_title">Module:6</h3>
+      <p>6</p>
+   </div>
+      <div class="modules" title="7">
+      <h3 class="m_title">Module:7</h3>
+      <p>7</p>
+   </div>
+      <div class="modules" title="8">
+      <h3 class="m_title">Module:8</h3>
+      <p>8</p>
+   </div>
+      <div class="modules" title="9">
+      <h3 class="m_title">Module:9</h3>
+      <p>9</p>
+   </div>
+      <div class="modules" title="10">
+      <h3 class="m_title">Module:10</h3>
+      <p>10</p>
+   </div>
+      <div class="modules" title="11">
+      <h3 class="m_title">Module:11</h3>
+      <p>11</p>
+   </div>
+      <div class="modules" title="12">
+      <h3 class="m_title">Module:12</h3>
+      <p>12</p>
+   </div>
+      <div class="modules" title="13">
+      <h3 class="m_title">Module:13</h3>
+      <p>13</p>
+   </div>
+      <div class="modules" title="14">
+      <h3 class="m_title">Module:14</h3>
+      <p>14</p>
+   </div>
+      <div class="modules" title="15">
+      <h3 class="m_title">Module:15</h3>
+      <p>15</p>
+   </div>
+      <div class="modules" title="16">
+      <h3 class="m_title">Module:16</h3>
+      <p>16</p>
+   </div>
+      <div class="clear"></div>
   </div>
-  <div class="album-ft">
-   <div class="album-desc  album-has-limit">    <div class="album-desc-side js-album-setLimit" data-hottag="list.icon_setpriv"><i class="icon-m icon-private-m" title="仅自己可见"></i></div>    <div class="album-tit"><a href="javascript:;" class="c-tx2 js-album-desc-a" title="微博相册" data-hottag="list.albumtitle">微博相册</a></div>
-   </div>
-  </div><div class="download-tips">
- <span class="download-count-bg"></span>
- <span class="download-photo-bg"></span>
- <p class="download-count">排队中</p>
- <span class="download-speed"></span>
-</div> </div>
-<!-- end goods list -->
-<div align="right" nowrap="true" style="width:90%;"><?=$pageStr ?></div> 
-
 </div>
-
-</form>
-
-<script type="text/javascript">
-  listTable.recordCount = 22;
-  listTable.pageCount = 2;
-
-    listTable.filter.cat_id = '0';
-    listTable.filter.intro_type = '';
-    listTable.filter.is_promote = '0';
-    listTable.filter.stock_warning = '0';
-    listTable.filter.brand_id = '0';
-    listTable.filter.keyword = '';
-    listTable.filter.suppliers_id = '';
-    listTable.filter.is_on_sale = '';
-    listTable.filter.sort_by = 'goods_id';
-    listTable.filter.sort_order = 'DESC';
-    listTable.filter.extension_code = '';
-    listTable.filter.is_delete = '0';
-    listTable.filter.real_goods = '1';
-    listTable.filter.record_count = '22';
-    listTable.filter.page_size = '15';
-    listTable.filter.page = '1';
-    listTable.filter.page_count = '2';
-    listTable.filter.start = '0';
-  
-  
-  onload = function()
-  {
-    startCheckOrder(); // 开始检查订单
-    document.forms['listForm'].reset();
-  }
-
-  /**
-   * @param: bool ext 其他条件：用于转移分类
-   */
-  function confirmSubmit(frm, ext)
-  {
-      if (frm.elements['type'].value == 'trash')
-      {
-          return confirm(batch_trash_confirm);
-      }
-      else if (frm.elements['type'].value == 'not_on_sale')
-      {
-          return confirm(batch_no_on_sale);
-      }
-      else if (frm.elements['type'].value == 'move_to')
-      {
-          ext = (ext == undefined) ? true : ext;
-          return ext && frm.elements['target_cat'].value != 0;
-      }
-      else if (frm.elements['type'].value == '')
-      {
-          return false;
-      }
-      else
-      {
-          return true;
-      }
-  }
-
-  function changeAction()
-  {
-      var frm = document.forms['listForm'];
-
-      // 切换分类列表的显示
-      frm.elements['target_cat'].style.display = frm.elements['type'].value == 'move_to' ? '' : 'none';
-			
-			      frm.elements['suppliers_id'].style.display = frm.elements['type'].value == 'suppliers_move_to' ? '' : 'none';
-			
-      if (!document.getElementById('btnSubmit').disabled &&
-          confirmSubmit(frm, false))
-      {
-          frm.submit();
-      }
-  }
-
-</script>
-<script>
-// document.write('<img class=topicwidth width="' + topic_width + '" height="' + topic_height + '" border="0" src="../' + img_url + '">');
-</script>
 <div id="footer">
 版权所有
 </div>
