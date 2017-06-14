@@ -1,0 +1,189 @@
+2017-05-03 22:39:07 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\WWW\test\yii\vendor\yiisoft\yii2\web\Request.php:1279
+Stack trace:
+#0 D:\WWW\test\yii\vendor\yiisoft\yii2\web\Request.php(1261): yii\web\Request->loadCookies()
+#1 D:\WWW\test\yii\vendor\yiisoft\yii2\web\Request.php(1346): yii\web\Request->getCookies()
+#2 D:\WWW\test\yii\vendor\yiisoft\yii2\web\Request.php(1325): yii\web\Request->loadCsrfToken()
+#3 D:\WWW\test\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(295): yii\web\Request->getCsrfToken()
+#4 D:\WWW\test\yii\views\layouts\main.php(20): yii\helpers\BaseHtml::csrfMetaTags()
+#5 D:\WWW\test\yii\vendor\yiisoft\yii2\base\View.php(328): require('D:\\WWW\\test\\yii...')
+#6 D:\WWW\test\yii\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\test\\yii...', Array)
+#7 D:\WWW\test\yii\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\WWW\\test\\yii...', Array, Object(app\controllers\SiteController))
+#8 D:\WWW\test\yii\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 D:\WWW\test\yii\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 D:\WWW\test\yii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\WWW\test\yii\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 D:\WWW\test\yii\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#14 D:\WWW\test\yii\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#15 D:\WWW\test\yii\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\WWW\test\yii\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-05-03 22:39:07 [::1][-][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1032459548.1493821998'
+    '_gid' => 'GA1.1.1864991832.1493821998'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/test/yii/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1032459548.1493821998; _gid=GA1.1.1864991832.1493821998'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files (x86)\\svn\\bin;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.4.45'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/WWW/test/yii/web/index.php'
+    'REMOTE_PORT' => '50776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/test/yii/web/'
+    'SCRIPT_NAME' => '/test/yii/web/index.php'
+    'PHP_SELF' => '/test/yii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493822347.773
+    'REQUEST_TIME' => 1493822347
+]
+2017-05-31 13:22:48 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php:1279
+Stack trace:
+#0 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1261): yii\web\Request->loadCookies()
+#1 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1346): yii\web\Request->getCookies()
+#2 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1325): yii\web\Request->loadCsrfToken()
+#3 D:\WWW\test\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(295): yii\web\Request->getCsrfToken()
+#4 D:\WWW\test\advance\views\layouts\main.php(20): yii\helpers\BaseHtml::csrfMetaTags()
+#5 D:\WWW\test\advance\vendor\yiisoft\yii2\base\View.php(328): require('D:\\WWW\\test\\adv...')
+#6 D:\WWW\test\advance\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\test\\adv...', Array)
+#7 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\WWW\\test\\adv...', Array, Object(app\controllers\SiteController))
+#8 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 D:\WWW\test\advance\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 D:\WWW\test\advance\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#14 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#15 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\WWW\test\advance\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-05-31 13:22:48 [::1][-][-][info][application] $_COOKIE = [
+    'XSRF-TOKEN' => 'eyJpdiI6IlpFWEpXaldMdFVLUkZqaXd0Q0xNQmc9PSIsInZhbHVlIjoiV2N0QXZlMVRCMlU5U0UwWitZVnRLdngwQ1doYmlySGZUXC9YZ3h3WW9FdlJwZ0dJanp4Wm0rRjhENlZtVEp5YUM5czFPOWlXMWpWeDRuem5tOVVDb2FnPT0iLCJtYWMiOiIzOGZhOTViNDQ4NWZiMTRhNDhlMjRjNGZiMjU5MzBjNjhlMmNkNTlhZDc5NWQ4NTBiNjUwMTcxMjI1MmQ3ZGFmIn0='
+    'laravel_session' => 'eyJpdiI6IjVuSjA5dCsrbnhqWVNrSGJmTFc2Z2c9PSIsInZhbHVlIjoiRmErZmR4OUlRRjA3T0J6VHlsRVZqdXZyZldqUExMSk1ITHBhcFZJbEUzOXNHY0lSRFdNbW5PdkVwSUpQYzJQUXpPVVV0eEFDVU9xY0RRa0h2NGE3MFE9PSIsIm1hYyI6IjdmOTBjODQzNGRiZjBmMzdjY2FjMTEwM2UwZjQ1ZjIyZTNkYmEwMTkzMmIwYmNlNWQ4MDVmMWM5MTNmMDQxMGQifQ=='
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/test/advance/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'XSRF-TOKEN=eyJpdiI6IlpFWEpXaldMdFVLUkZqaXd0Q0xNQmc9PSIsInZhbHVlIjoiV2N0QXZlMVRCMlU5U0UwWitZVnRLdngwQ1doYmlySGZUXC9YZ3h3WW9FdlJwZ0dJanp4Wm0rRjhENlZtVEp5YUM5czFPOWlXMWpWeDRuem5tOVVDb2FnPT0iLCJtYWMiOiIzOGZhOTViNDQ4NWZiMTRhNDhlMjRjNGZiMjU5MzBjNjhlMmNkNTlhZDc5NWQ4NTBiNjUwMTcxMjI1MmQ3ZGFmIn0%3D; laravel_session=eyJpdiI6IjVuSjA5dCsrbnhqWVNrSGJmTFc2Z2c9PSIsInZhbHVlIjoiRmErZmR4OUlRRjA3T0J6VHlsRVZqdXZyZldqUExMSk1ITHBhcFZJbEUzOXNHY0lSRFdNbW5PdkVwSUpQYzJQUXpPVVV0eEFDVU9xY0RRa0h2NGE3MFE9PSIsIm1hYyI6IjdmOTBjODQzNGRiZjBmMzdjY2FjMTEwM2UwZjQ1ZjIyZTNkYmEwMTkzMmIwYmNlNWQ4MDVmMWM5MTNmMDQxMGQifQ%3D%3D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files (x86)\\svn\\bin;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\;D:\\phpStudy\\php\\php-5.4.45;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/WWW/test/advance/web/index.php'
+    'REMOTE_PORT' => '53649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/test/advance/web/'
+    'SCRIPT_NAME' => '/test/advance/web/index.php'
+    'PHP_SELF' => '/test/advance/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496208168.239
+    'REQUEST_TIME' => 1496208168
+]
+2017-05-31 15:00:02 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php:1279
+Stack trace:
+#0 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1261): yii\web\Request->loadCookies()
+#1 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1346): yii\web\Request->getCookies()
+#2 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Request.php(1325): yii\web\Request->loadCsrfToken()
+#3 D:\WWW\test\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(295): yii\web\Request->getCsrfToken()
+#4 D:\WWW\test\advance\views\layouts\main.php(20): yii\helpers\BaseHtml::csrfMetaTags()
+#5 D:\WWW\test\advance\vendor\yiisoft\yii2\base\View.php(328): require('D:\\WWW\\test\\adv...')
+#6 D:\WWW\test\advance\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\test\\adv...', Array)
+#7 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\WWW\\test\\adv...', Array, Object(app\controllers\SiteController))
+#8 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 D:\WWW\test\advance\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 D:\WWW\test\advance\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#14 D:\WWW\test\advance\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#15 D:\WWW\test\advance\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\WWW\test\advance\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-05-31 15:00:02 [::1][-][-][info][application] $_COOKIE = [
+    'XSRF-TOKEN' => 'eyJpdiI6IlpFWEpXaldMdFVLUkZqaXd0Q0xNQmc9PSIsInZhbHVlIjoiV2N0QXZlMVRCMlU5U0UwWitZVnRLdngwQ1doYmlySGZUXC9YZ3h3WW9FdlJwZ0dJanp4Wm0rRjhENlZtVEp5YUM5czFPOWlXMWpWeDRuem5tOVVDb2FnPT0iLCJtYWMiOiIzOGZhOTViNDQ4NWZiMTRhNDhlMjRjNGZiMjU5MzBjNjhlMmNkNTlhZDc5NWQ4NTBiNjUwMTcxMjI1MmQ3ZGFmIn0='
+    'laravel_session' => 'eyJpdiI6IjVuSjA5dCsrbnhqWVNrSGJmTFc2Z2c9PSIsInZhbHVlIjoiRmErZmR4OUlRRjA3T0J6VHlsRVZqdXZyZldqUExMSk1ITHBhcFZJbEUzOXNHY0lSRFdNbW5PdkVwSUpQYzJQUXpPVVV0eEFDVU9xY0RRa0h2NGE3MFE9PSIsIm1hYyI6IjdmOTBjODQzNGRiZjBmMzdjY2FjMTEwM2UwZjQ1ZjIyZTNkYmEwMTkzMmIwYmNlNWQ4MDVmMWM5MTNmMDQxMGQifQ=='
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/test/advance/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'XSRF-TOKEN=eyJpdiI6IlpFWEpXaldMdFVLUkZqaXd0Q0xNQmc9PSIsInZhbHVlIjoiV2N0QXZlMVRCMlU5U0UwWitZVnRLdngwQ1doYmlySGZUXC9YZ3h3WW9FdlJwZ0dJanp4Wm0rRjhENlZtVEp5YUM5czFPOWlXMWpWeDRuem5tOVVDb2FnPT0iLCJtYWMiOiIzOGZhOTViNDQ4NWZiMTRhNDhlMjRjNGZiMjU5MzBjNjhlMmNkNTlhZDc5NWQ4NTBiNjUwMTcxMjI1MmQ3ZGFmIn0%3D; laravel_session=eyJpdiI6IjVuSjA5dCsrbnhqWVNrSGJmTFc2Z2c9PSIsInZhbHVlIjoiRmErZmR4OUlRRjA3T0J6VHlsRVZqdXZyZldqUExMSk1ITHBhcFZJbEUzOXNHY0lSRFdNbW5PdkVwSUpQYzJQUXpPVVV0eEFDVU9xY0RRa0h2NGE3MFE9PSIsIm1hYyI6IjdmOTBjODQzNGRiZjBmMzdjY2FjMTEwM2UwZjQ1ZjIyZTNkYmEwMTkzMmIwYmNlNWQ4MDVmMWM5MTNmMDQxMGQifQ%3D%3D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files (x86)\\svn\\bin;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35\\;D:\\phpStudy\\php\\php-5.4.45;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/WWW/test/advance/web/index.php'
+    'REMOTE_PORT' => '51813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/test/advance/web/'
+    'SCRIPT_NAME' => '/test/advance/web/index.php'
+    'PHP_SELF' => '/test/advance/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496214002.43
+    'REQUEST_TIME' => 1496214002
+]
